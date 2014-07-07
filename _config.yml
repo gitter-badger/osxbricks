@@ -1,0 +1,12 @@
+# Site settings
+title: OSXBricks.com
+email: contact@osxbricks.com
+description: "This is a backup of articles on http://osxbricks.com."
+baseurl: ""
+url: "http://www.osxbricks.com"
+twitter_username: osxbricks
+github_username:  leolelego
+
+# Build settings
+markdown: kramdown
+permalink: pretty
