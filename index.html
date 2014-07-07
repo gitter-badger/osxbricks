@@ -3,18 +3,12 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1>Posts</h1>
-
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <time datetime="2014-06-17">{{ post.date | date: "%b %-d, %Y" }}</time></a>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">Go to original website now <a href="http://www.osxbricks.com">now</a></p>
 
 </div>

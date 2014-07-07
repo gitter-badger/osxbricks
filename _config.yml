@@ -1,8 +1,8 @@
 # Site settings
-title: OSXBricks
-email: contact@leoderbois.com
+title: OSXBricks Articles Backup
+email: contact@osxbricks.com
 description: "This is a backup of articles on http://osxbricks.com."
-baseurl: "http://leolelego.github.io/osxbricks/"
+baseurl: ""
 url: "http://leolelego.github.io/osxbricks/"
 twitter_username: osxbricks
 github_username:  leolelego

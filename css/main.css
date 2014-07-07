@@ -59,7 +59,17 @@ a:visited { color: #205caa; }
   position: relative;
   z-index: 1;
 }
+.site_description{
+  clear: both;
+    display: block;
+  color: #333;
+  font-size: 16px;
 
+  float: left;
+
+  position: relative;
+  z-index: 1;
+}
 .site-nav {
   float: right;
   line-height: 56px;
@@ -148,16 +158,20 @@ a:visited { color: #205caa; }
 
 .posts { list-style-type: none; }
 
-.posts li { margin-bottom: 30px; }
+.posts li { 
+  display: block;
+  margin-bottom: 30px; 
+}
 
 .posts .post-link {
+  float: left;
   font-size: 24px;
   letter-spacing: -1px;
   line-height: 1;
 }
 
 .posts .post-date {
-  display: block;
+  float: right;
   font-size: 15px;
   color: #818181;
 }
