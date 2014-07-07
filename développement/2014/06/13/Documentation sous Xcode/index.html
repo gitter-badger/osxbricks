@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>OSXBricks.com</title>
+    <title>Documentation sous Xcode</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This is a backup of articles on http://osxbricks.com.">
-    <link rel="canonical" href="http://leolelego.github.io/osxbricks//">
+    <link rel="canonical" href="http://leolelego.github.io/osxbricks//d%C3%A9veloppement/2014/06/13/Documentation%20sous%20Xcode/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -53,33 +53,63 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
+      <div class="post">
 
-  <h1>Posts</h1>
+  <header class="post-header">
+    <h1>Documentation sous Xcode</h1>
+    <p class="meta">Jun 13, 2014</p>
+  </header>
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Jul 3, 2014</span>
-        <a class="post-link" href="/workflow/2014/07/03/Ecouter%20la%20radio%20avec%20Alfred/">Ecouter la radio avec Alfred</a>
-      </li>
-    
-      <li>
-        <span class="post-date">Jun 13, 2014</span>
-        <a class="post-link" href="/d%C3%A9veloppement/2014/06/13/Documentation%20sous%20Xcode/">Documentation sous Xcode</a>
-      </li>
-    
-      <li>
-        <span class="post-date">Feb 4, 2014</span>
-        <a class="post-link" href="/osxbricks/2014/02/04/Automatiser%20la%20gestion%20du%20wifi%20sur%20Mac/">Automatiser la gestion du wifi sur Mac</a>
-      </li>
-    
-  </ul>
+  <article class="post-content">
+  <p>Les développeurs utilisant Xcode et Cocoa connaissent le raccourci <code>alt+clic</code> qui permet de voir rapidement la documentation d’une méthode ou d’une classe des frameworks fournis par Apple. Si ce n’est pas le cas, vous manquez un outil bien utile !</p>
 
-  <p class="rss-subscribe">Go to original website now <a href="http://www.osxbricks.com">now</a></p>
+<p><a href="http://farm8.staticflickr.com/7313/12364419514_d32c9cfd3d.jpg" rel="lightbox">
+<img src="http://farm8.staticflickr.com/7313/12364419514_d32c9cfd3d.jpg" alt="Alt+clic sur runModal d'un NSSavePanel" />
+</a></p>
+
+<p>A partir d’Xcode 5, Apple offre la possibilité d’utiliser cette feature pour documenter son code Cocoa et ainsi avoir les définitions de nos méthodes et classes rapidement sans retourner voir les sources. Utile pour les projets de groupe !</p>
+
+<h2 id="utiliser-la-syntaxe-de-documentation-approprie">Utiliser la syntaxe de documentation appropriée</h2>
+
+<p>Chaque langage ou IDE posséde sa propre manière d’être documenté, elles se ressemblent toutes, mais ont aussi chacune leur particularité. L’outil d’Apple ne déroge pas à la règle. Même si des outils, comme <a href="www.doxygen.org">Doxygen</a>, permettent de centraliser la question, certains développeurs préféreront utiliser les méthodes les plus adéquates pour leur langage ou leur IDE,pour exploiter les possibilités de l’IDE au maximum par exemple.</p>
+
+<h4 id="exemple">Exemple</h4>
+
+<ul>
+  <li>votre documentation :    </li>
+</ul>
+
+<p><a href="http://farm3.staticflickr.com/2853/12443847493_fac0325c51.jpg" rel="lightbox">
+<img src="http://farm3.staticflickr.com/2853/12443847493_fac0325c51.jpg" alt="Exemple de docuement" />
+</a>    </p>
+
+<ul>
+  <li>Le resultat : </li>
+</ul>
+
+<p><a href="http://farm3.staticflickr.com/2819/12443709685_17d7e55a35.jpg" rel="lightbox">
+<img src="http://farm3.staticflickr.com/2819/12443709685_17d7e55a35.jpg" alt="resultat de la documenation précédente" />
+</a>    </p>
+
+<p>Plutôt que d’expliquer en details les normes de la documentation, vous pouvez consulter ce  <a href="https://github.com/leolelego/OSX-Bricks-Codes/tree/master/XcodeDocumentation">petit projet</a> avec quelques exemples (qui vont évoluer avec mes découvertes). Mais sachez qu’il existe un plugin d’Xcode pour vous mâcher le travail !</p>
+
+<h2 id="un-plugin-pour-le-faire-pour-vous-">Un Plugin pour le faire pour vous ?</h2>
+
+<p>Comme me disait un prof durant mes études,  <em>ça ne sert à rien de réinventer la roue</em>, j’ai cherché ce que les autres ont fait de bien, et voici ce que j’ai trouvé (et que j’utilise tous les jours depuis 6 mois), <strong>VVDocument</strong>, un plugin pour Xcode qui permet de générer votre documentation directement dans vos fichiers ressources.  Rapidement, vous entrez trois slashs <code>///</code> et <strong>VVDocument</strong> se débrouille pour trouver le format de documentation le plus adéquat, avec des <code>&lt;#variable#&gt;</code> pour éditer la doc’ facilement. La preuve en image :</p>
+
+<p><a href="https://raw.github.com/onevcat/VVDocumenter-Xcode/master/ScreenShot.gif" rel="lightbox">
+<img src="https://raw.github.com/onevcat/VVDocumenter-Xcode/master/ScreenShot.gif" alt="GIF montrant le fonctionnement de VVDocumenter" />
+</a>  <br />
+Pour utiliser ce magnifique plugin, <a href="https://github.com/onevcat/VVDocumenter-Xcode/archive/master.zip">télécharger la dernière version</a>, et je vous recommande de visiter la page <a href="https://github.com/onevcat/VVDocumenter-Xcode">Github des développeurs</a> !</p>
+
+<blockquote>
+  <p>Petit rappel, nul besoin d’ouvrir le projet une fois téléchargé, taper juste :
+ <code>xcodebuild -project path/to/VVDocumenter-Xcode.xcodeproj --alltarguets</code></p>
+</blockquote>
+
+  </article>
 
 </div>
-
       </div>
     </div>
 

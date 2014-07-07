@@ -1,30 +1,130 @@
----
-layout: none
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>OSXBricks.com</title>
+    <description>This is a backup of articles on http://osxbricks.com.</description>
+    <link>http://leolelego.github.io/osxbricks//</link>
+    <atom:link href="http://leolelego.github.io/osxbricks//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 08 Jul 2014 00:45:42 +0200</pubDate>
+    <lastBuildDate>Tue, 08 Jul 2014 00:45:42 +0200</lastBuildDate>
+    <generator>Jekyll v2.1.0</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Ecouter la radio avec Alfred</title>
+        <description>&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://inft.ly/4qFB2Sc&quot;&gt;Radio&lt;/a&gt;&lt;/strong&gt; permet d’écouter des webradios sur votre application de musique préférée, comme &lt;a href=&quot;https://www.apple.com/itunes/&quot;&gt;iTunes&lt;/a&gt; ou &lt;a href=&quot;http://www.videolan.org/index.fr.html&quot;&gt;VLC&lt;/a&gt;. Ce workflow est pour les utilisateurs du &lt;a href=&quot;http://www.alfredapp.com/powerpack/&quot;&gt;Powerpack&lt;/a&gt; d’&lt;a href=&quot;http://www.alfredapp.com&quot;&gt;Alfred&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://cl.ly/image/2E0P210R4204/radioWorkflow.gif&quot; width=&quot;834&quot; height=&quot;615&quot; alt=&quot;Démonstatrion : radio avec alfred&quot; class=&quot;aligncenter&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;radio-vous-permet-d&quot;&gt;Radio vous permet d’:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;écouter 35 stations&lt;/strong&gt; par défaut via &lt;code&gt;radio {name}&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ajouter vos propres stations&lt;/strong&gt; via &lt;code&gt;radioadd {flux} {name}&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;supprimer une station via &lt;code&gt;radiorm {name}&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;retrouver la configuration par défaut &lt;code&gt;radioreset&lt;/code&gt;,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;N’hésitez pas à commenter ou envoyer un &lt;a href=&quot;mailto:contact@osxbricks.com&quot;&gt;mail&lt;/a&gt; pour &lt;strong&gt;proposer des radios&lt;/strong&gt; à ajouter par défaut ! &lt;/p&gt;
+
+&lt;h2 id=&quot;dvloppement&quot;&gt;Dévloppement&lt;/h2&gt;
+
+&lt;p&gt;Ce workflow est mon premier  projet en Python. Pour communiquer facilement avec  &lt;strong&gt;Alfred&lt;/strong&gt; , j’ai utilisé la librairie &lt;a href=&quot;https://github.com/phyllisstein/alp&quot;&gt;alp de Daniel Shannon&lt;/a&gt;, et enlever certains composant inutile (pour ce workflow) pour améliorer sa vitesse.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Jul 2014 00:59:35 +0200</pubDate>
+        <link>http://leolelego.github.io/osxbricks//workflow/2014/07/03/Ecouter%20la%20radio%20avec%20Alfred/</link>
+        <guid isPermaLink="true">http://leolelego.github.io/osxbricks//workflow/2014/07/03/Ecouter%20la%20radio%20avec%20Alfred/</guid>
+        
+        
+        <category>workflow</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Documentation sous Xcode</title>
+        <description>&lt;p&gt;Les développeurs utilisant Xcode et Cocoa connaissent le raccourci &lt;code&gt;alt+clic&lt;/code&gt; qui permet de voir rapidement la documentation d’une méthode ou d’une classe des frameworks fournis par Apple. Si ce n’est pas le cas, vous manquez un outil bien utile !&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://farm8.staticflickr.com/7313/12364419514_d32c9cfd3d.jpg&quot; rel=&quot;lightbox&quot;&gt;
+&lt;img src=&quot;http://farm8.staticflickr.com/7313/12364419514_d32c9cfd3d.jpg&quot; alt=&quot;Alt+clic sur runModal d&#39;un NSSavePanel&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A partir d’Xcode 5, Apple offre la possibilité d’utiliser cette feature pour documenter son code Cocoa et ainsi avoir les définitions de nos méthodes et classes rapidement sans retourner voir les sources. Utile pour les projets de groupe !&lt;/p&gt;
+
+&lt;h2 id=&quot;utiliser-la-syntaxe-de-documentation-approprie&quot;&gt;Utiliser la syntaxe de documentation appropriée&lt;/h2&gt;
+
+&lt;p&gt;Chaque langage ou IDE posséde sa propre manière d’être documenté, elles se ressemblent toutes, mais ont aussi chacune leur particularité. L’outil d’Apple ne déroge pas à la règle. Même si des outils, comme &lt;a href=&quot;www.doxygen.org&quot;&gt;Doxygen&lt;/a&gt;, permettent de centraliser la question, certains développeurs préféreront utiliser les méthodes les plus adéquates pour leur langage ou leur IDE,pour exploiter les possibilités de l’IDE au maximum par exemple.&lt;/p&gt;
+
+&lt;h4 id=&quot;exemple&quot;&gt;Exemple&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;votre documentation :    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://farm3.staticflickr.com/2853/12443847493_fac0325c51.jpg&quot; rel=&quot;lightbox&quot;&gt;
+&lt;img src=&quot;http://farm3.staticflickr.com/2853/12443847493_fac0325c51.jpg&quot; alt=&quot;Exemple de docuement&quot; /&gt;
+&lt;/a&gt;    &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Le resultat : &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://farm3.staticflickr.com/2819/12443709685_17d7e55a35.jpg&quot; rel=&quot;lightbox&quot;&gt;
+&lt;img src=&quot;http://farm3.staticflickr.com/2819/12443709685_17d7e55a35.jpg&quot; alt=&quot;resultat de la documenation précédente&quot; /&gt;
+&lt;/a&gt;    &lt;/p&gt;
+
+&lt;p&gt;Plutôt que d’expliquer en details les normes de la documentation, vous pouvez consulter ce  &lt;a href=&quot;https://github.com/leolelego/OSX-Bricks-Codes/tree/master/XcodeDocumentation&quot;&gt;petit projet&lt;/a&gt; avec quelques exemples (qui vont évoluer avec mes découvertes). Mais sachez qu’il existe un plugin d’Xcode pour vous mâcher le travail !&lt;/p&gt;
+
+&lt;h2 id=&quot;un-plugin-pour-le-faire-pour-vous-&quot;&gt;Un Plugin pour le faire pour vous ?&lt;/h2&gt;
+
+&lt;p&gt;Comme me disait un prof durant mes études,  &lt;em&gt;ça ne sert à rien de réinventer la roue&lt;/em&gt;, j’ai cherché ce que les autres ont fait de bien, et voici ce que j’ai trouvé (et que j’utilise tous les jours depuis 6 mois), &lt;strong&gt;VVDocument&lt;/strong&gt;, un plugin pour Xcode qui permet de générer votre documentation directement dans vos fichiers ressources.  Rapidement, vous entrez trois slashs &lt;code&gt;///&lt;/code&gt; et &lt;strong&gt;VVDocument&lt;/strong&gt; se débrouille pour trouver le format de documentation le plus adéquat, avec des &lt;code&gt;&amp;lt;#variable#&amp;gt;&lt;/code&gt; pour éditer la doc’ facilement. La preuve en image :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://raw.github.com/onevcat/VVDocumenter-Xcode/master/ScreenShot.gif&quot; rel=&quot;lightbox&quot;&gt;
+&lt;img src=&quot;https://raw.github.com/onevcat/VVDocumenter-Xcode/master/ScreenShot.gif&quot; alt=&quot;GIF montrant le fonctionnement de VVDocumenter&quot; /&gt;
+&lt;/a&gt;  &lt;br /&gt;
+Pour utiliser ce magnifique plugin, &lt;a href=&quot;https://github.com/onevcat/VVDocumenter-Xcode/archive/master.zip&quot;&gt;télécharger la dernière version&lt;/a&gt;, et je vous recommande de visiter la page &lt;a href=&quot;https://github.com/onevcat/VVDocumenter-Xcode&quot;&gt;Github des développeurs&lt;/a&gt; !&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Petit rappel, nul besoin d’ouvrir le projet une fois téléchargé, taper juste :
+ &lt;code&gt;xcodebuild -project path/to/VVDocumenter-Xcode.xcodeproj --alltarguets&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 13 Jun 2014 00:59:35 +0200</pubDate>
+        <link>http://leolelego.github.io/osxbricks//d%C3%A9veloppement/2014/06/13/Documentation%20sous%20Xcode/</link>
+        <guid isPermaLink="true">http://leolelego.github.io/osxbricks//d%C3%A9veloppement/2014/06/13/Documentation%20sous%20Xcode/</guid>
+        
+        
+        <category>développement</category>
+        
+      </item>
+    
+      <item>
+        <title>Automatiser la gestion du wifi sur Mac</title>
+        <description>&lt;p&gt;En soi ce script n’est pas des plus utile, mais si vous utilisez un lanceur comme &lt;a href=&quot;http://www.alfredapp.com&quot;&gt;Alfred&lt;/a&gt; et que vous souhaitez favoriser l’Ethernet quand vous êtes chez vous, ce petit script peut vous être pratique. Il va vous aidez pour activer ou désactiver rapidement le Wifi sur Mac.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+#Léo Derbois (@osxbricks): www.osxbricks.com
+#This code permit to swith On/Off Wifi on OSX
+
+interface=&quot;en1&quot; #your airport interface
+ret=`networksetup -getair
+portpower $interface`
+if [[ &quot;$ret&quot; == *On* ]]
+then
+    networksetup -setairportpower $interface off
+    echo &quot;Wi-Fi is Off&quot;
+else
+    networksetup -setairportpower $interface on
+    echo &quot;Wi-Fi is On&quot;
+fi Et en bonus le petit workflow pour Alfred que je me suis fais [ici](http://inft.ly/QEv3ieV)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Tue, 04 Feb 2014 23:22:22 +0100</pubDate>
+        <link>http://leolelego.github.io/osxbricks//osxbricks/2014/02/04/Automatiser%20la%20gestion%20du%20wifi%20sur%20Mac/</link>
+        <guid isPermaLink="true">http://leolelego.github.io/osxbricks//osxbricks/2014/02/04/Automatiser%20la%20gestion%20du%20wifi%20sur%20Mac/</guid>
+        
+        
+        <category>osxbricks</category>
+        
+      </item>
+    
   </channel>
 </rss>

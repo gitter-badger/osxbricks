@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>OSXBricks.com</title>
+    <title>Ecouter la radio avec Alfred</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This is a backup of articles on http://osxbricks.com.">
-    <link rel="canonical" href="http://leolelego.github.io/osxbricks//">
+    <link rel="canonical" href="http://leolelego.github.io/osxbricks//workflow/2014/07/03/Ecouter%20la%20radio%20avec%20Alfred/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -53,33 +53,36 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
+      <div class="post">
 
-  <h1>Posts</h1>
+  <header class="post-header">
+    <h1>Ecouter la radio avec Alfred</h1>
+    <p class="meta">Jul 3, 2014</p>
+  </header>
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Jul 3, 2014</span>
-        <a class="post-link" href="/workflow/2014/07/03/Ecouter%20la%20radio%20avec%20Alfred/">Ecouter la radio avec Alfred</a>
-      </li>
-    
-      <li>
-        <span class="post-date">Jun 13, 2014</span>
-        <a class="post-link" href="/d%C3%A9veloppement/2014/06/13/Documentation%20sous%20Xcode/">Documentation sous Xcode</a>
-      </li>
-    
-      <li>
-        <span class="post-date">Feb 4, 2014</span>
-        <a class="post-link" href="/osxbricks/2014/02/04/Automatiser%20la%20gestion%20du%20wifi%20sur%20Mac/">Automatiser la gestion du wifi sur Mac</a>
-      </li>
-    
-  </ul>
+  <article class="post-content">
+  <p><strong><a href="http://inft.ly/4qFB2Sc">Radio</a></strong> permet d’écouter des webradios sur votre application de musique préférée, comme <a href="https://www.apple.com/itunes/">iTunes</a> ou <a href="http://www.videolan.org/index.fr.html">VLC</a>. Ce workflow est pour les utilisateurs du <a href="http://www.alfredapp.com/powerpack/">Powerpack</a> d’<a href="http://www.alfredapp.com">Alfred</a>.</p>
 
-  <p class="rss-subscribe">Go to original website now <a href="http://www.osxbricks.com">now</a></p>
+<p><img src="http://cl.ly/image/2E0P210R4204/radioWorkflow.gif" width="834" height="615" alt="Démonstatrion : radio avec alfred" class="aligncenter" /></p>
+
+<h2 id="radio-vous-permet-d">Radio vous permet d’:</h2>
+
+<ul>
+  <li><strong>écouter 35 stations</strong> par défaut via <code>radio {name}</code>,</li>
+  <li><strong>ajouter vos propres stations</strong> via <code>radioadd {flux} {name}</code>,</li>
+  <li>supprimer une station via <code>radiorm {name}</code>,</li>
+  <li>retrouver la configuration par défaut <code>radioreset</code>,</li>
+</ul>
+
+<p>N’hésitez pas à commenter ou envoyer un <a href="mailto:contact@osxbricks.com">mail</a> pour <strong>proposer des radios</strong> à ajouter par défaut ! </p>
+
+<h2 id="dvloppement">Dévloppement</h2>
+
+<p>Ce workflow est mon premier  projet en Python. Pour communiquer facilement avec  <strong>Alfred</strong> , j’ai utilisé la librairie <a href="https://github.com/phyllisstein/alp">alp de Daniel Shannon</a>, et enlever certains composant inutile (pour ce workflow) pour améliorer sa vitesse.</p>
+
+  </article>
 
 </div>
-
       </div>
     </div>
 
