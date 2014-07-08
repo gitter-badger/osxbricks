@@ -18,8 +18,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #2a7ae2; text-decoration: none; }
-a:hover   { color: #000; text-decoration: underline; }
+a         { color: #BB5A2D; text-decoration: none; }
+a:hover   { color: #C72B24; text-decoration: underline; }
 a:visited { color: #205caa; }
 
 /* Utility */
@@ -40,6 +40,33 @@ a:visited { color: #205caa; }
 
 /* Site header */
 
+.logo{
+    width: 40%;
+    margin: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(https://us-east-1-links-infinit-io.s3.amazonaws.com/53bb25ade9a23c5f37e971eb/OSXBricks%20Logo.png?AWSAccessKeyId=AKIAIPTEKRYOSJORHQMA&Expires=1407370100&Signature=8S8y1qFC8j/PuItyBusFqUC574Y%3D);
+  background-repeat: no-repeat;
+  background-size: 180px 180px;
+  height: 180px;
+  width:180px;
+
+      transition : all 500ms;
+  /*browser specific versions*/
+  -moz-transition : all 500ms;
+  -ms-transition : all 500ms;
+  -webkit-transition : all 500ms;
+  -o-transition : all 500ms;
+}
+.logo:hover{
+    transform :rotate(7deg);
+  /*browser specific versions*/
+  -moz-transform :rotate(7deg);
+  -ms-transform :rotate(7deg);
+  -webkit-transform :rotate(7deg);
+  -o-transform :rotate(7deg);
+}
 .site-header {
   border-top: 5px solid #333;
   border-bottom: 1px solid #e8e8e8;
@@ -84,7 +111,29 @@ a:visited { color: #205caa; }
 }
 
 /* Site footer */
+.footer-text{
+  font-size: 22px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 20%;
+    transition : all 500ms;
+  /*browser specific versions*/
+  -moz-transition : all 500ms;
+  -ms-transition : all 500ms;
+  -webkit-transition : all 500ms;
+  -o-transition : all 500ms;
+}
+.footer-text:hover{
+  text-decoration: none;
+  transform : translate(0px, 0px) scale(1.5);
+  /*browser specific versions*/
+  -moz-transform : translate(0px, 0px) scale(1.5);
+  -ms-transform : translate(0px, 0px) scale(1.5);
+  -webkit-transform : translate(0px, 0px) scale(1.5);
+  -o-transform : translate(0px, 0px) scale(1.5);
 
+}
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
@@ -155,26 +204,33 @@ a:visited { color: #205caa; }
 /* ----------------------------------------------------------*/
 
 .home h1 { margin-bottom: 25px; }
-
 .posts { list-style-type: none; }
 
-.posts li { 
-  display: block;
-  margin-bottom: 30px; 
-}
+.posts li { margin-bottom: 30px; }
 
 .posts .post-link {
-  float: left;
   font-size: 24px;
   letter-spacing: -1px;
   line-height: 1;
+  color: #BB5A2D;
+}
+.posts .post-link:hover{
+  color : #C72B24;
+  text-decoration: none;
+}
+.posts .post-date {
+  display: block;
+  font-size: 15px;
+  color: #818181;
 }
 
-.posts .post-date {
+.posts a time {
+  display: block;
   float: right;
   font-size: 15px;
   color: #818181;
 }
+
 
 
 /* Post styles */
