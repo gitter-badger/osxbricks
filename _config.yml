@@ -1,7 +1,7 @@
 # Site settings
 title: OSXBricks Light
 email: contact@osxbricks.com
-description: "This is a lighter version the site http://osxbricks.com."
+description: "Version allégé du site "
 baseurl: "/osxbricks/"
 url: "http://leolelego.github.io/osxbricks/"
 twitter_username: osxbricks
