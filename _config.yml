@@ -1,7 +1,7 @@
 # Site settings
-title: OSXBricks Articles Backup
+title: OSXBricks Light
 email: contact@osxbricks.com
-description: "This is a backup of articles on http://osxbricks.com."
+description: "This is a lighter version the site http://osxbricks.com."
 baseurl: "http://leolelego.github.io/osxbricks/"
 url: "http://leolelego.github.io/osxbricks/"
 twitter_username: osxbricks
