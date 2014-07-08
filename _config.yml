@@ -5,7 +5,7 @@ description: "Version allégé du site "
 baseurl: "/osxbricks/"
 url: "http://leolelego.github.io/osxbricks/"
 twitter_username: osxbricks
-github_username:  leolelego
+github_username:  leoderbois
 
 # Build settings
 markdown: kramdown
