@@ -2,8 +2,8 @@
 title: OSXBricks Light
 email: contact@osxbricks.com
 description: "Version allégé du site "
-baseurl: "/osxbricks/"
-url: "http://leolelego.github.io/osxbricks/"
+baseurl: ""
+url: "http://jekyll.osxbricks.com"
 twitter_username: osxbricks
 github_username:  leoderbois
 
