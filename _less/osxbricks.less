@@ -42,9 +42,24 @@ body a:hover{
   /*background-color: @warning-test-color;*/
 }
 
-#headband a,#headband a:hover{
+a#headband {
   text-decoration: none;
   color: @headband-text-color;
+    transition : all @headband-animation-time;
+
+  -moz-transition : all @headband-animation-time;
+  -ms-transition : all @headband-animation-time;
+  -webkit-transition : all @headband-animation-time;
+  -o-transition : all @headband-animation-time;
+
+}
+a:hover#headband{
+  transform:  @headband-animation-scale;
+  -webkit-transform:  @headband-animation-scale;
+  -moz-transform:  @headband-animation-scale;
+  -o-transform:  @headband-animation-scale;
+  -ms-transform:  @headband-animation-scale;
+
 }
 #headband div#logo{
   display: inline-block;

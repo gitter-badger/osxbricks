@@ -4,6 +4,7 @@
 /*############## HEADER ######### */
 /* ressources */
 /* Sizes */
+/* Animations */
 body {
   background-color: #ffffff;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -45,10 +46,21 @@ body a:hover {
   text-decoration: none;
   /*background-color: @warning-test-color;*/
 }
-#headband a,
-#headband a:hover {
+a#headband {
   text-decoration: none;
   color: #000000;
+  transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+a:hover#headband {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
 }
 #headband div#logo {
   display: inline-block;
