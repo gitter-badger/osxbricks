@@ -34,7 +34,7 @@ body a:hover{
 
 }
 #headband {
-  width: 780px;
+  width: @headband-width;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -48,11 +48,11 @@ body a:hover{
 }
 #headband div#logo{
   display: inline-block;
-  background-image: url(/assets/headband/logo.png);
+  background-image: @headband-logo-path;
   background-repeat: no-repeat;
-  background-size: 180px 180px;
-  height: 180px;
-  width:180px;
+  background-size: @headband-logo-size @headband-logo-size;
+  height: @headband-logo-size;
+  width:@headband-logo-size;
 }
 #headband div#texts {
   display: inline-block;

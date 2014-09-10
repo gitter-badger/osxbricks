@@ -4,6 +4,7 @@ email: contact@osxbricks.com
 description: "Some bricks for your code and your OS X"
 baseurl: ""
 url: # "http://leolelego.github.io/osxbricks/"
+copyright:Copyright © 2014 Léo Derbois and OSXBricks. All rights reserved.
 
 
 
@@ -17,6 +18,9 @@ favicon         : /assets/favicon.ico 		# website Favicon  / Need to be local (i
 twitter: leoderbois
 github: leoderbois 
 linkedin: leoderbois
+feedUrl : http://feed.com
+resume_site: http://www.leoderbois.com
+author_page: author 
 
 # Build settings
 markdown: kramdown
