@@ -2,7 +2,7 @@
 layout: post
 title:  "Ecouter la radio avec Alfred"
 date:   2014-07-02 22:59:35
-categories: workflow
+categories: Alfred_Workflow
 ---
 
 **[Radio](http://inft.ly/4qFB2Sc)** permet d'écouter des webradios sur votre application de musique préférée, comme [iTunes](https://www.apple.com/itunes/) ou [VLC](http://www.videolan.org/index.fr.html). Ce workflow est pour les utilisateurs du [Powerpack](http://www.alfredapp.com/powerpack/) d'[Alfred](http://www.alfredapp.com).

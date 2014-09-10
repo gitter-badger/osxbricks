@@ -1,12 +1,24 @@
 # Site settings
-title: OSXBricks Light
+title: OSXBricks
 email: contact@osxbricks.com
-description: "Version allégé du site "
-baseurl: "/osxbricks/"
-url: "http://leolelego.github.io/osxbricks/"
-twitter_username: osxbricks
-github_username:  leoderbois
+description: "Some bricks for your code and your OS X"
+baseurl: ""
+url: # "http://leolelego.github.io/osxbricks/"
+
+
+
+# Site
+metadata: ["OS X BRicks","OSXBricks","OS X","Xcode","server","CV","Boba Fett"] # Metadata for 
+googleAnalyticsID: UA-52933969-1
+favicon         : /assets/favicon.ico 		# website Favicon  / Need to be local (in assets forlder)
+
+
+# account
+twitter: leoderbois
+github: leoderbois 
+linkedin: leoderbois
+
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:title

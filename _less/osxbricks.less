@@ -1,0 +1,75 @@
+@import "colors.less";
+@import "variables.less";
+@import "syntax-hilight.less";
+@import "fonts.less";
+@import url(http://twitter.github.com/bootstrap/assets/css/bootstrap.css);
+
+html {
+}
+body {
+  background-color: @background-color;
+  font-family: @font-global;
+}
+body a{
+  color: @link-color;
+}
+body a:hover{
+  color: @link-color-hover;
+  text-decoration: none;
+}
+
+/*############# Header ##########*/
+
+/* Colpred band */
+.colored-band{height: @colored-band-height}
+.colored-band-one{background-color: @colored-band-one;}
+.colored-band-two{background-color: @colored-band-two;}
+.colored-band-three{background-color: @colored-band-three;}
+.colored-band-four{background-color: @colored-band-four;}
+
+/* handband */
+#headbandframe{
+  margin-top: @headband-margin;
+  margin-bottom: @headband-margin;
+
+}
+#headband {
+  width: 780px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  /*background-color: @warning-test-color;*/
+}
+
+#headband a,#headband a:hover{
+  text-decoration: none;
+  color: @headband-text-color;
+}
+#headband div#logo{
+  display: inline-block;
+  background-image: url(/assets/headband/logo.png);
+  background-repeat: no-repeat;
+  background-size: 180px 180px;
+  height: 180px;
+  width:180px;
+}
+#headband div#texts {
+  display: inline-block;
+  vertical-align: text-bottom;
+  color: @headband-text-color;
+
+}
+
+
+#headband div#texts div#osx {
+  display: inline-block;
+  font-size: @headband-font-size;
+  font-family:@headband-font;
+}
+
+#headband div#texts div#bricks {
+  display: inline-block;
+  font-size: @headband-font-size;
+  font-family:@headband-font-light;
+}

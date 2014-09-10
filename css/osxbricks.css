@@ -1,0 +1,75 @@
+@import url(http://twitter.github.com/bootstrap/assets/css/bootstrap.css);
+/* Colored Band */
+/* headband */
+body {
+  background-color: #FFFFFF;
+}
+body {
+  background-color: #ffffff;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+body a {
+  color: #ff0000;
+}
+body a:hover {
+  color: #008000;
+  text-decoration: none;
+}
+/*############# Header ##########*/
+/* Colpred band */
+.colored-band {
+  height: 4px;
+}
+.colored-band-one {
+  background-color: #327ea3;
+}
+.colored-band-two {
+  background-color: #4ca5d0;
+}
+.colored-band-three {
+  background-color: #ffbc38;
+}
+.colored-band-four {
+  background-color: #e82c0c;
+}
+/* handband */
+#headbandframe {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#headband {
+  width: 780px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  /*background-color: @warning-test-color;*/
+}
+#headband a,
+#headband a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+#headband div#logo {
+  display: inline-block;
+  background-image: url(/assets/headband/logo.png);
+  background-repeat: no-repeat;
+  background-size: 180px 180px;
+  height: 180px;
+  width: 180px;
+}
+#headband div#texts {
+  display: inline-block;
+  vertical-align: text-bottom;
+  color: #000000;
+}
+#headband div#texts div#osx {
+  display: inline-block;
+  font-size: 120px;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+#headband div#texts div#bricks {
+  display: inline-block;
+  font-size: 120px;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
