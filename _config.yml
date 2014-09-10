@@ -1,6 +1,7 @@
 # Site settings
 title: OSXBricks
 email: contact@osxbricks.com
+<<<<<<< HEAD
 description: "Some bricks for your code and your OS X"
 baseurl: ""
 url: # "http://leolelego.github.io/osxbricks/"
@@ -18,6 +19,13 @@ twitter: leoderbois
 github: leoderbois 
 linkedin: leoderbois
 
+=======
+description: "Version allégé du site "
+baseurl: ""
+url: "http://jekyll.osxbricks.com"
+twitter_username: osxbricks
+github_username:  leoderbois
+>>>>>>> FETCH_HEAD
 
 # Build settings
 markdown: kramdown
