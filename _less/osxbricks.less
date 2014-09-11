@@ -18,6 +18,48 @@ body a:hover{
   text-decoration: none;
 }
 
+/* ######### INLINE LINK ########### */
+li a{
+  color:@link-color-inline;
+  transition : all 500ms;
+  /*browser specific versions*/
+  -moz-transition : all 500ms;
+  -ms-transition : all 500ms;
+  -webkit-transition : all 500ms;
+  -o-transition : all 500ms;
+}
+
+li.color-twitter a:hover{
+  color : @color-twitter;
+}
+li.color-facebook a:hover{
+  color : @color-facebook;
+}
+li.color-google a:hover{
+  color : @color-google;
+}
+li.color-github a:hover{
+  color : @color-github;
+}
+li.color-linkedin a:hover{
+  color : @color-linkedin;
+}
+li.color-email a:hover{
+  color : @color-email;
+}
+li.color-author a:hover{
+  color : @color-author;
+}
+li.color-rss a:hover{
+  color : @color-rss;
+}
+li.color-pocket a:hover{
+  color : @color-pocket;
+}
+li.color-readability a:hover{
+  color : @color-readability;
+}
+
 /*############# Header ##########*/
 
 /* Colpred band */
@@ -88,3 +130,28 @@ a:hover#headband{
   font-size: @headband-font-size;
   font-family:@headband-font-light;
 }
+
+/* ############# Page ################*/
+
+#page{
+  background-color: @warning-test-color; 
+  min-height:200px;
+  width: @page-width;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Social band */
+#socialheadband{
+  text-align: @socialheadband-direction;
+  margin-right: @socialheadband-margin-lr;
+  margin-left: @socialheadband-margin-lr;
+  font-size: @socialheadband-font-size;
+}
+
+#socialheadband li{
+  display: inline;
+  list-style: none;
+  margin-left: @socialheadband-seperation;
+}
+

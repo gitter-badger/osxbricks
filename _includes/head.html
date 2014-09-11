@@ -5,7 +5,7 @@
 	    {% if page.title %}
 	    	{{ site.title }} | {{ page.title }}
 	    {% else %}
-	    	{{ site.title }} <!--| {{site.slogan}}-->
+	    	{{ site.title }}
 	    {% endif %}
     </title>
     <meta name="keywords" content="{{site.metadata | join: ','}}" />
@@ -19,11 +19,5 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/osxbricks.css" | prepend: site.baseurl }}">
-<!--
-    // <script type="text/javascript">
-    // function animateOnStart(elmt) {
-    //     var element2 = document.getElementById(elmt);
-    //     element2.classList.add("animation");
-    // }
-    // </script>-->
+
 </head>

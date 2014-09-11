@@ -1,10 +1,23 @@
 @import url(http://twitter.github.com/bootstrap/assets/css/bootstrap.css);
+/* ########### DEFAULT #########*/
+/*for inline content */
+/* ########### HEADER #########*/
 /* Colored Band */
-/* headband */
+/* HEADERBAND */
+/* ######### PAGE #########*/
+/* Social headband */
 /*############## HEADER ######### */
 /* ressources */
 /* Sizes */
 /* Animations */
+/* ##### PAGE ###### */
+/* General */
+/* Social Headband*/
+/* ########### DEFAULT #########*/
+/* ########### HEADER #########*/
+/* HEADERBAND */
+/* ######### PAGE #########*/
+/* Social headband */
 body {
   background-color: #ffffff;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -15,6 +28,46 @@ body a {
 body a:hover {
   color: #008000;
   text-decoration: none;
+}
+/* ######### INLINE LINK ########### */
+li a {
+  color: #000000;
+  transition: all 500ms;
+  /*browser specific versions*/
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+}
+li.color-twitter a:hover {
+  color: #4099ff;
+}
+li.color-facebook a:hover {
+  color: #3b5998;
+}
+li.color-google a:hover {
+  color: #0000ff;
+}
+li.color-github a:hover {
+  color: #008000;
+}
+li.color-linkedin a:hover {
+  color: #0000ff;
+}
+li.color-email a:hover {
+  color: #ff0000;
+}
+li.color-author a:hover {
+  color: #ff0000;
+}
+li.color-rss a:hover {
+  color: #ffa500;
+}
+li.color-pocket a:hover {
+  color: #ffc0cb;
+}
+li.color-readability a:hover {
+  color: #ff0000;
 }
 /*############# Header ##########*/
 /* Colpred band */
@@ -84,4 +137,25 @@ a:hover#headband {
   display: inline-block;
   font-size: 120px;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+/* ############# Page ################*/
+#page {
+  background-color: #ffa500;
+  min-height: 200px;
+  width: 940px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Social band */
+#socialheadband {
+  text-align: right;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-size: 28px;
+}
+#socialheadband li {
+  display: inline;
+  list-style: none;
+  margin-left: 8px;
 }

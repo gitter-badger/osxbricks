@@ -29,11 +29,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_layouts\/default.html": {
+	"\/_includes\/socialheadband.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_layouts\/default.html",
+		"inputAbbreviatedPath": "\/_includes\/socialheadband.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_layouts\/osxbricks.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_layouts\/osxbricks.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -156,63 +165,39 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/_posts\/2014-02-04-AutomatiserlagestionduwifisurMac.md": {
+	"\/_posts\/2014-02-04-Quickly-OnOff-Wi-Fi-Alfred-Workflow.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 0,
 		"expandTabs": 0,
 		"fileType": 4096,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-02-04-AutomatiserlagestionduwifisurMac.md",
-		"outputAbbreviatedPath": "\/_posts\/2014-02-04-AutomatiserlagestionduwifisurMac.html",
+		"inputAbbreviatedPath": "\/_posts\/2014-02-04-Quickly-OnOff-Wi-Fi-Alfred-Workflow.md",
+		"outputAbbreviatedPath": "\/_posts\/2014-02-04-Quickly-OnOff-Wi-Fi-Alfred-Workflow.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/2014-06-12-DocumentationsousXcode.md": {
+	"\/_posts\/2014-06-12-Documentation-in-Xcode.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 0,
 		"expandTabs": 0,
 		"fileType": 4096,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-06-12-DocumentationsousXcode.md",
-		"outputAbbreviatedPath": "\/_posts\/2014-06-12-DocumentationsousXcode.html",
+		"inputAbbreviatedPath": "\/_posts\/2014-06-12-Documentation-in-Xcode.md",
+		"outputAbbreviatedPath": "\/_posts\/2014-06-12-Documentation-in-Xcode.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/2014-07-02-Ecouter-la-radio-avec-Alfred.md": {
+	"\/_posts\/2014-07-02-Listen-radio-with-Alfred.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 0,
 		"expandTabs": 0,
 		"fileType": 4096,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-07-02-Ecouter-la-radio-avec-Alfred.md",
-		"outputAbbreviatedPath": "\/_posts\/2014-07-02-Ecouter-la-radio-avec-Alfred.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_posts\/2014-09-09-synchronisexcodeprefs.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 0,
-		"expandTabs": 0,
-		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-09-09-synchronisexcodeprefs.md",
-		"outputAbbreviatedPath": "\/_posts\/2014-09-09-synchronisexcodeprefs.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_posts\/Sync-bash-profile.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 0,
-		"expandTabs": 0,
-		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/Sync-bash-profile.md",
-		"outputAbbreviatedPath": "\/_posts\/Sync-bash-profile.html",
+		"inputAbbreviatedPath": "\/_posts\/2014-07-02-Listen-radio-with-Alfred.md",
+		"outputAbbreviatedPath": "\/_posts\/2014-07-02-Listen-radio-with-Alfred.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -249,15 +234,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/AutomatiserlagestionduwifisurMac\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/AutomatiserlagestionduwifisurMac\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_site\/css\/fonts.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -276,20 +252,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/DocumentationsousXcode\/index.html": {
+	"\/_site\/Documentation-in-Xcode\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/DocumentationsousXcode\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/Ecouter-la-radio-avec-Alfred\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/Ecouter-la-radio-avec-Alfred\/index.html",
+		"inputAbbreviatedPath": "\/_site\/Documentation-in-Xcode\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -303,11 +270,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/synchronisexcodeprefs\/index.html": {
+	"\/_site\/Listen-radio-with-Alfred\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/synchronisexcodeprefs\/index.html",
+		"inputAbbreviatedPath": "\/_site\/Listen-radio-with-Alfred\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/Quickly-OnOff-Wi-Fi-Alfred-Workflow\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/Quickly-OnOff-Wi-Fi-Alfred-Workflow\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
