@@ -13,7 +13,7 @@ metadata: ["OS X BRicks","OSXBricks","OS X","Xcode","server","CV","Boba Fett"] #
 googleAnalyticsID: UA-52933969-1
 favicon         : /assets/favicon.ico 		# website Favicon  / Need to be local (in assets forlder)
 article_count : 10
-
+disqus: osxbricks
 # account
 twitter: leoderbois
 github: leoderbois 
