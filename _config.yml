@@ -5,14 +5,14 @@ description: "Some bricks for your code and your OS X"
 baseurl: ""
 url: # "http://leolelego.github.io/osxbricks/"
 copyright: Copyright © 2014 Léo Derbois and OSXBricks. All rights reserved.
-
-
+feed: /feed.xml
+archivewords: Read older articles
 
 # Site
 metadata: ["OS X BRicks","OSXBricks","OS X","Xcode","server","CV","Boba Fett"] # Metadata for 
 googleAnalyticsID: UA-52933969-1
 favicon         : /assets/favicon.ico 		# website Favicon  / Need to be local (in assets forlder)
-article_count : 10
+home_articles_nb : 2
 disqus: osxbricks
 # account
 twitter: leoderbois

@@ -2,7 +2,7 @@
 layout: post
 title:  "Documentation in Xcode"
 date:   2014-06-12 22:59:35
-categories: Development
+categories: development
 
 ---
 

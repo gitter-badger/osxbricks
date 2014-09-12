@@ -1,9 +1,12 @@
+@import "bootstrap.less";
 @import "colors.less";
 @import "variables.less";
 @import "syntax-hilight.less";
 @import "fonts.less";
 @import url(http://twitter.github.com/bootstrap/assets/css/bootstrap.css);
 
+
+@responsive-min: @screen-sm-min;
 html {
 }
 body {
@@ -18,8 +21,23 @@ body a:hover{
   text-decoration: none;
 }
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 /* ######### INLINE LINK ########### */
-li a{
+ul.inline{
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.inline li{
+  display: inline;
+  list-style: none;
+}
+
+ul.inline li a{
   color:@link-color-inline;
   transition : all 500ms;
   /*browser specific versions*/
@@ -28,6 +46,8 @@ li a{
   -webkit-transition : all 500ms;
   -o-transition : all 500ms;
 }
+
+
 
 li.color-twitter a:hover{
   color : @color-twitter;
@@ -81,13 +101,15 @@ li.color-readability a:hover{
   margin-left: auto;
   margin-right: auto;
   text-decoration: none;
-  /*background-color: @warning-test-color;*/
+  @media(max-width: @responsive-min){
+    width: 100%;
+  }
 }
 
 a#headband {
   text-decoration: none;
   color: @headband-text-color;
-    transition : all @headband-animation-time;
+  transition : all @headband-animation-time;
 
   -moz-transition : all @headband-animation-time;
   -ms-transition : all @headband-animation-time;
@@ -110,25 +132,47 @@ a:hover#headband{
   background-size: @headband-logo-size @headband-logo-size;
   height: @headband-logo-size;
   width:@headband-logo-size;
+  @media(max-width: @responsive-min){
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @media(max-width: 600px){
+        background-size: @headband-logo-size-sm @headband-logo-size-sm;
+        height: @headband-logo-size-sm;
+        width:@headband-logo-size-sm;
+      }
+
+  }
 }
-#headband div#texts {
+#headband h1#texts {
   display: inline-block;
   vertical-align: text-bottom;
+  padding-bottom: 20px;
   color: @headband-text-color;
+  @media(max-width: @responsive-min){
+    display:none;
+  }
 
 }
 
 
-#headband div#texts div#osx {
+#headband h1#texts div#osx {
   display: inline-block;
   font-size: @headband-font-size;
   font-family:@headband-font;
+    @media(max-width: @responsive-min){
+    display:none;
+  }
+
 }
 
-#headband div#texts div#bricks {
+#headband h1#texts div#bricks {
   display: inline-block;
   font-size: @headband-font-size;
   font-family:@headband-font-light;
+    @media(max-width: @responsive-min){
+    display:none;
+  }
 }
 
 /* ############# Page ################*/
@@ -136,10 +180,10 @@ a:hover#headband{
 #page{
   background-color: @warning-test-color; 
   min-height:200px;
-  width: @page-width;
+/*  width: @page-width;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
 }
 /* Social band */
 #socialheadband{
@@ -147,11 +191,195 @@ a:hover#headband{
   margin-right: @socialheadband-margin-lr;
   margin-left: @socialheadband-margin-lr;
   font-size: @socialheadband-font-size;
+
+  @media(max-width: @responsive-min){
+    text-align:center;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 #socialheadband li{
-  display: inline;
-  list-style: none;
   margin-left: @socialheadband-seperation;
+}
+
+/* ###### POST ####### */
+.post{
+  background-color: @post-bg-color;
+  margin: @post-margin;
+}
+
+.post  div.headband{
+  border-top: 1px solid #e5e5e5;
+}
+
+.post div.headband div.category{
+    background-color: @post-headband-categ-default-color;
+    height: @post-headband-height;
+}
+
+.post div.headband div.category.tricks{
+    background-color: @post-categ-tricks;
+}
+
+.post div.headband div.category.server{
+    background-color: @post-categ-server;
+}
+.post div.headband div.category.media{
+    background-color: @post-categ-media;
+}
+.post div.headband div.category.development{
+    background-color: @post-categ-development;
+}
+.post div.headband div.category.alfredworkflow{
+    background-color: @post-categ-workflow;
+}
+
+.post div.headband div.category div.logo{
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  width:60px;
+  float: left;
+  border-right: 1px solid @footer-line-color;
+  @media(max-width: @screen-md-min){
+      display:none;
+      @media(max-width: @screen-sm-min){
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        border-right : transparent;
+      }
+
+  }
+
+}
+
+/* logos */
+.post div.headband div.category div.logo.default {
+  background-image: url(/assets/category/default.png);
+  background-size: 44px 34px;
+
+
+}
+.post div.headband div.category div.logo.tricks {
+  background-image: url(/assets/category/tricks.png);
+  background-size: 44px 44px;
+}
+.post div.headband div.category div.logo.server {
+  background-image: url(/assets/category/server.png);
+  background-size: 44px 44px;
+}
+.post div.headband div.category div.logo.media-center {
+  background-image: url(/assets/category/media-center.png);
+  background-size: 44px 44px;
+}
+.post div.headband div.category div.logo.development {
+  background-image: url(/assets/category/development.png);
+  background-size: 44px 44px;
+}
+.post div.headband div.category div.logo.alfredworkflow {
+  background-image: url(/assets/category/alfred.png);
+  background-size: 44px 44px;
+}
+
+.post div.headband div.category div.title{
+  display: block;
+  margin-top: @post-headband-sharing-margin;
+  font-size: @post-headband-categ-ft-size;
+  font-family: @post-headband-categ-font;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  color:@post-headband-categ-txt-color;
+  @media(max-width: @screen-sm-min){
+        display:none;
+  }
+}
+.post div.headband ul.sharing{
+  font-size: @post-headband-sharing-ft-size;
+  margin-top: @post-headband-sharing-margin !important;
+}
+.post div.headband ul.sharing li{
+
+  margin-left: @post-headband-sharing-space !important;
+
+}
+.post div.headband ul.sharing li a{
+  color: @post-headband-sharing-color;
+}
+
+
+
+/*####### FOOTER ######### */
+
+
+a#archive-button{
+  font-family: @archive-bt-font;
+  font-size: @archive-bt-ft-size ;
+  text-transform: uppercase;
+
+  border-radius: @archivebt-radius;
+  border-style: solid;
+  border-width: @archivebt-brd-witdh;
+  border-color: @archivebt-border-color;
+  background-color: @archivebt-bg-color;
+  color: @archivebt-txt-color;
+  padding-top:@archivebt-padding;
+  padding-bottom: @archivebt-padding;
+  text-align: center;
+
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+  transition : all @archivebt-animation-time;
+  /*browser specific versions*/
+  -moz-transition : all @archivebt-animation-time;
+  -ms-transition : all @archivebt-animation-time;
+  -webkit-transition : all @archivebt-animation-time;
+  -o-transition : all @archivebt-animation-time;
+}
+
+
+
+
+
+a:hover#archive-button{
+  background-color: @archivebt-bg-color-hover;
+  color: @archivebt-txt-color-hover;
+  border-color: @archivebt-border-color-hover;
+}
+
+footer{
+  font-family: @footer-font;
+  margin-bottom: @footer-margin-bottom;
+  margin-top: @footer-margin-top;
+}
+footer ul#footer_links{
+  width: @footer-line-width;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  border-top: @footer-line-height solid @footer-line-color;
+  padding-top: @footer-line-space;
+  font-weight: bold;
+  font-size: @footer-links-size;
+}
+
+footer ul#footer_links li a{
+  color:@footer-links-color;
+}
+footer ul#footer_links li a:hover{
+  color:@footer-links-color-hover;
+}
+
+footer #copyright {
+  font-size: @footer-copyright-size;
+  color: @footer-copyright-color;
+  text-align: center;
 }
 
