@@ -470,7 +470,7 @@ a:hover#headband {
 }
 #headband div#logo {
   display: inline-block;
-  background-image: url(/assets/headband/logo.png);
+  background-image: url(/assets/logo.png);
   background-repeat: no-repeat;
   background-size: 180px 180px;
   height: 180px;

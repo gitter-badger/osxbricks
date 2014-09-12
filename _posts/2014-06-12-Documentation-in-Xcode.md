@@ -14,6 +14,7 @@ All developpers on Xcode know the `⎇+clic` shortcut which show quiclky informa
 
 Since Xcode 5, Apple permits to use this feature to document your own code. That's can be useful to show quickly a difficult method that's your co-worker did.
 
+
 ## Use the good syntax of documentation
 
 each language or IDE have it own documentation rules. They all look alike, but they all have there particularity. The Apple tool is not an exception to the rule. [Doxygen](www.doxygen.org) centralize the question, because it works for all platforms. But some developers, like me, prefer to use the built in method for the IDE or languages they use.
@@ -46,3 +47,6 @@ I search if somebody did something to improve my user exeprience and i found  **
 To use this splendid plugin [download it](https://github.com/onevcat/VVDocumenter-Xcode/archive/master.zip) and i recommend to visit the developer [github page](https://github.com/onevcat/VVDocumenter-Xcode).
 
 > Reminder : that's not an obligation to run Xcode, just enter this line in terminal : `xcodebuild -project path/to/VVDocumenter-Xcode.xcodeproj --alltarguets`
+
+
+

@@ -14,6 +14,10 @@ googleAnalyticsID: UA-52933969-1
 favicon         : /assets/favicon.ico 		# website Favicon  / Need to be local (in assets forlder)
 home_articles_nb : 2
 disqus: osxbricks
+
+
+excerpt_separator: <!--excerpt-->
+
 # account
 twitter: leoderbois
 github: leoderbois 
@@ -21,6 +25,7 @@ linkedin: leoderbois
 feedUrl : http://feed.com
 resume_site: http://www.leoderbois.com
 author_page: author 
+googleplus: LéoDerbois
 
 # Build settings
 markdown: kramdown
