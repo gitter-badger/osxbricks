@@ -1,29 +1,15 @@
-<header>
-  <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 colored-band colored-band-one"></div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 colored-band colored-band-two"></div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 colored-band colored-band-three"></div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 colored-band colored-band-four"></div>
-  </div>
-  <div class="headband">
-    
-  </div>
-    <div class="headband">
-    
-  </div>
-  <div id="headbandframe" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <a href="/" id="headband">
-        <div id="logo"></div>
-        <div id="texts">
-          <div id="osx">OSX</div>
-          <div id="bricks">Bricks</div>
-        </div>
+<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+{% include coloredband.html %}
 
-       <!-- <script type="text/javascript">
-          animateOnStart('headband-logo');
-          animateOnStart('headband-osx');
-          animateOnStart('headband-bricks');
-        </script>-->
-  </a>
+  <div class="row" id="headbandframe" >
+    <a href="/" id="headband">
+      <div id="logo"></div>
+      <h1 id="texts">
+        <div id="osx">OSX</div>
+        <div id="bricks">Bricks</div>
+      </h1>
+
+    </a>
   </div>
 </header>
+
