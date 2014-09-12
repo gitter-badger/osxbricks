@@ -364,20 +364,44 @@ ul.inline li a {
   -webkit-transition: all 500ms;
   -o-transition: all 500ms;
 }
+li.pocket a {
+  background: url(/assets/readlater/pocket.png) center 0 no-repeat;
+  display: inline-block;
+  float: left;
+  height: 48px;
+  width: 48px;
+  white-space: nowrap;
+}
+li.pocket a:hover {
+  background: url(/assets/readlater/pocket-hover.png) center 0 no-repeat;
+}
+li.readability a {
+  display: block;
+  display: inline-block;
+  float: left;
+  height: 48px;
+  width: 48px;
+  white-space: nowrap;
+  background: url(/assets/readlater/readability.png) center 0 no-repeat;
+}
+li.readability a:hover {
+  background: url(/assets/readlater/readability-hover.png) center 0 no-repeat;
+}
+/*### General Hover ### */
 li.color-twitter a:hover {
-  color: #4099ff;
+  color: #00aced;
 }
 li.color-facebook a:hover {
   color: #3b5998;
 }
 li.color-google a:hover {
-  color: #0000ff;
+  color: #dd4b39;
 }
 li.color-github a:hover {
   color: #008000;
 }
 li.color-linkedin a:hover {
-  color: #0000ff;
+  color: #007bb6;
 }
 li.color-email a:hover {
   color: #ff0000;
@@ -535,6 +559,11 @@ a:hover#headband {
   background-color: #000000;
   height: 60px;
 }
+@media (min-width: 992px) {
+  .post div.headband div.category {
+    max-width: 560px;
+  }
+}
 .post div.headband div.category.tricks {
   background-color: #327ea3;
 }
@@ -596,11 +625,11 @@ a:hover#headband {
 }
 .post div.headband div.category div.logo.alfredworkflow {
   background-image: url(/assets/category/alfred.png);
-  background-size: 44px 44px;
+  background-size: 44px 38px;
 }
 .post div.headband div.category div.title {
   display: block;
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 2em;
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
@@ -615,14 +644,13 @@ a:hover#headband {
   }
 }
 .post div.headband ul.sharing {
+  top: 10px;
+  left: 30px;
   font-size: 2.5em;
   margin-top: 5px !important;
 }
 .post div.headband ul.sharing li {
   margin-left: 10px !important;
-}
-.post div.headband ul.sharing li a {
-  color: #333333;
 }
 /*####### FOOTER ######### */
 a#archive-button {

@@ -47,8 +47,38 @@ ul.inline li a{
   -o-transition : all 500ms;
 }
 
+li.pocket a {
+  background: url(/assets/readlater/pocket.png) center 0 no-repeat ;
+  display: inline-block;
+  float: left;
+  height: 48px;
+  width: 48px;
+  white-space:nowrap;  
+}
+
+li.pocket a:hover {
+  background: url(/assets/readlater/pocket-hover.png) center 0 no-repeat ;
+  
+}
+
+li.readability a {
+  display: block;
+  display: inline-block;
+  float: left;
+  height: 48px;
+  width: 48px;
+  white-space:nowrap;
+  background: url(/assets/readlater/readability.png) center 0 no-repeat ;
+  
+}
+
+li.readability a:hover {
+  background: url(/assets/readlater/readability-hover.png) center 0 no-repeat ;
+  
+}
 
 
+/*### General Hover ### */
 li.color-twitter a:hover{
   color : @color-twitter;
 }
@@ -79,7 +109,6 @@ li.color-pocket a:hover{
 li.color-readability a:hover{
   color : @color-readability;
 }
-
 /*############# Header ##########*/
 
 /* Colpred band */
@@ -216,6 +245,11 @@ a:hover#headband{
 .post div.headband div.category{
     background-color: @post-headband-categ-default-color;
     height: @post-headband-height;
+    @media(min-width:@screen-md-min){
+    max-width: @post-category-maxwitdh-normal;
+  }
+
+
 }
 
 .post div.headband div.category.tricks{
@@ -252,17 +286,13 @@ a:hover#headband{
         float: none;
         border-right : transparent;
       }
-
   }
-
 }
 
 /* logos */
 .post div.headband div.category div.logo.default {
   background-image: url(/assets/category/default.png);
   background-size: 44px 34px;
-
-
 }
 .post div.headband div.category div.logo.tricks {
   background-image: url(/assets/category/tricks.png);
@@ -282,12 +312,12 @@ a:hover#headband{
 }
 .post div.headband div.category div.logo.alfredworkflow {
   background-image: url(/assets/category/alfred.png);
-  background-size: 44px 44px;
+  background-size: 44px 38px;
 }
 
 .post div.headband div.category div.title{
   display: block;
-  margin-top: @post-headband-sharing-margin;
+  margin-top: @post-headband-category-margin;
   font-size: @post-headband-categ-ft-size;
   font-family: @post-headband-categ-font;
   text-align: center;
@@ -300,17 +330,15 @@ a:hover#headband{
   }
 }
 .post div.headband ul.sharing{
+top: @post-headband-sharing-margin-top;
+  left: @post-headband-sharing-margin-left; 
   font-size: @post-headband-sharing-ft-size;
-  margin-top: @post-headband-sharing-margin !important;
+  margin-top: 5px !important;
 }
 .post div.headband ul.sharing li{
-
   margin-left: @post-headband-sharing-space !important;
+}
 
-}
-.post div.headband ul.sharing li a{
-  color: @post-headband-sharing-color;
-}
 
 
 

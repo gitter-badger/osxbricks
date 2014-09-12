@@ -3,7 +3,7 @@ title: OSXBricks
 email: contact@osxbricks.com
 description: "Some bricks for your code and your OS X"
 baseurl: ""
-url: # "http://leolelego.github.io/osxbricks/"
+url: http://www.osxbricks.com # "http://leolelego.github.io/osxbricks/"
 copyright: Copyright © 2014 Léo Derbois and OSXBricks. All rights reserved.
 feed: /feed.xml
 archivewords: Read older articles
