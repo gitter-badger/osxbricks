@@ -702,7 +702,8 @@ a:hover#headband {
   content: '›';
 }
 .post section article p,
-.post section article blockquote {
+.post section article blockquote,
+.post section article pre {
   margin-left: 20px;
 }
 .post section article p {
