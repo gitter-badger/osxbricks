@@ -25,7 +25,9 @@ body a:hover{
    padding: 0 !important;
    margin: 0 !important;
 }
-
+time{
+    font-style: italic;
+}
 /* ######### INLINE LINK ########### */
 ul.inline{
   padding: 0;
@@ -235,11 +237,10 @@ a:hover#headband{
 /* ###### POST ####### */
 .post{
   background-color: @post-bg-color;
-  margin: @post-margin;
 }
 
 .post  div.headband{
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid @line-color;
 }
 
 .post div.headband div.category{
@@ -276,7 +277,7 @@ a:hover#headband{
   height: 60px;
   width:60px;
   float: left;
-  border-right: 1px solid @footer-line-color;
+  border-right: 1px solid @line-color;
   @media(max-width: @screen-md-min){
       display:none;
       @media(max-width: @screen-sm-min){
@@ -340,10 +341,154 @@ top: @post-headband-sharing-margin-top;
 }
 
 
+/* Posts content */
+.post section{
+  font-family: @post-font;
+  font-size: @post-font-size;
+  margin-bottom: @post-margin-bottom;
+  margin-top:  @post-margin-top;
+}
+.post section header {
+  margin-bottom: @post-header-margin-btm;
+
+}
+.post section header a h1{
+  color: @post-title-color;
+  font-weight: bold;
+  font-family: @post-title-font;
+  font-size: @post-title-font-size;
+  margin-bottom: 0px;
+
+}
+.post section header a:hover h1{
+  color:@colored-band-two  ;
+}
+
+.post section header date{
+  color: @post-date-color;
+  font-family: @post-date-font;
+  font-size: @post-date-size;
+}
+.post section article a{
+  font-weight:bold;
+}
+
+.post section article a:hover{
+  text-decoration: underline;
+}
+.post section article h2,
+.post section article h3,
+.post section article h4{
+  color: @post-subtitle-color;
+  font-family: @post-subtitles-font;
+  margin-left: 0px;
+}
+
+.post section article h2:before{
+  font: 36px Times;
+  padding-right: 6px;
+  content: '›';
+}
+
+
+.post section article p,
+.post section article blockquote
+{
+  margin-left: @post-text-margin;
+
+}
+.post section article p{
+      text-align: justify;
+    text-justify: inter-word;
+
+}
+.post section article blockquote p{
+  margin-left: 0px;
+        text-align:left;
+}
+.post section article ul {
+  list-style:none;
+  padding-left: 1.3em ;
+}
+
+.post section article ul li:before {
+  content: @post-list-icon;
+   font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}
+
+
+.post section article img{
+  max-width: @post-image-max-width;
+  height: auto;
+  display: block;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Archive PAge */
+
+#archive{
+  border-top: 1px solid @line-color;
+  padding-top:@archive-padding-top;
+}
+#archive li {
+  font-size: @archive-size;
+  list-style: none;
+  margin-bottom: @archive-space;
+  font-family: @archive-title-font;
+
+}
+#archive li span.category{
+  border-radius: 3px;
+  background-color: @archive-categ-default-color;
+  font-family: @archive-categ-font;
+  color:@archive-categ-text-color;
+  padding: 4px;
+
+}
+
+#archive li span.category.tricks{
+    background-color: @post-categ-tricks;
+}
+
+#archive li span.category.server{
+    background-color: @post-categ-server;
+}
+#archive li span.category.media{
+    background-color: @post-categ-media;
+}
+#archive li span.category.development{
+    background-color: @post-categ-development;
+}
+#archive li span.category.alfredworkflow{
+    background-color: @post-categ-workflow;
+}
+
+
+#archive li time{
+  font-family: @archive-date-font;
+  font-size: @archive-date-size;
+  float: right;
+  color:@archive-date-color;
+}
+
 
 
 /*####### FOOTER ######### */
+#toTop {
+  width: @footer-line-width;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
 
+}
 
 a#archive-button{
   font-family: @archive-bt-font;
@@ -392,7 +537,7 @@ footer ul#footer_links{
   margin-right: auto;
   display: block;
   text-align: center;
-  border-top: @footer-line-height solid @footer-line-color;
+  border-top: @footer-line-height solid @line-color;
   padding-top: @footer-line-space;
   font-weight: bold;
   font-size: @footer-links-size;

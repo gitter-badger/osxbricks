@@ -9,6 +9,8 @@
 /* Social headband */
 /*#### POST ####*/
 /* Headband */
+/* Post */
+/* Archive */
 /* Archive button */
 /* ### FOOTER #### */
 /*############## HEADER ######### */
@@ -20,6 +22,7 @@
 /* Social Headband*/
 /*#### POST ####*/
 /* headband */
+/* Archive */
 /* Archive button */
 /* ##### FOOTER ##### */
 .post pre,
@@ -329,6 +332,7 @@
 /* ######### PAGE #########*/
 /* Social headband */
 /* #### POST ####*/
+/* Archive Page */
 /* Archive button */
 /* #### FOOTER ##### */
 body {
@@ -336,15 +340,18 @@ body {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 body a {
-  color: #ff0000;
+  color: #327ea3;
 }
 body a:hover {
-  color: #008000;
+  color: #ff0000;
   text-decoration: none;
 }
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
+}
+time {
+  font-style: italic;
 }
 /* ######### INLINE LINK ########### */
 ul.inline {
@@ -550,7 +557,6 @@ a:hover#headband {
 /* ###### POST ####### */
 .post {
   background-color: #ffffff;
-  margin: 20px;
 }
 .post div.headband {
   border-top: 1px solid #e5e5e5;
@@ -652,7 +658,128 @@ a:hover#headband {
 .post div.headband ul.sharing li {
   margin-left: 10px !important;
 }
+/* Posts content */
+.post section {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.post section header {
+  margin-bottom: 30px;
+}
+.post section header a h1 {
+  color: #ff0000;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+.post section header a:hover h1 {
+  color: #4ca5d0;
+}
+.post section header date {
+  color: #808080;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.post section article a {
+  font-weight: bold;
+}
+.post section article a:hover {
+  text-decoration: underline;
+}
+.post section article h2,
+.post section article h3,
+.post section article h4 {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  margin-left: 0px;
+}
+.post section article h2:before {
+  font: 36px Times;
+  padding-right: 6px;
+  content: '›';
+}
+.post section article p,
+.post section article blockquote {
+  margin-left: 20px;
+}
+.post section article p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.post section article blockquote p {
+  margin-left: 0px;
+  text-align: left;
+}
+.post section article ul {
+  list-style: none;
+  padding-left: 1.3em ;
+}
+.post section article ul li:before {
+  content: '\f188';
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}
+.post section article img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Archive PAge */
+#archive {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+}
+#archive li {
+  font-size: 20px;
+  list-style: none;
+  margin-bottom: 15px;
+  font-family: 'PT Sans', sans-serif;
+}
+#archive li span.category {
+  border-radius: 3px;
+  background-color: #000000;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  padding: 4px;
+}
+#archive li span.category.tricks {
+  background-color: #327ea3;
+}
+#archive li span.category.server {
+  background-color: #4ca5d0;
+}
+#archive li span.category.media {
+  background-color: #e82c0c;
+}
+#archive li span.category.development {
+  background-color: #02243a;
+}
+#archive li span.category.alfredworkflow {
+  background-color: #310d42;
+}
+#archive li time {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  float: right;
+  color: #808080;
+}
 /*####### FOOTER ######### */
+#toTop {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+}
 a#archive-button {
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -700,7 +827,7 @@ footer ul#footer_links li a {
   color: #000000;
 }
 footer ul#footer_links li a:hover {
-  color: #008000;
+  color: #ff0000;
 }
 footer #copyright {
   font-size: 0.9em;

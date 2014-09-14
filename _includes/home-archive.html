@@ -1,6 +1,15 @@
 <section class="row">
-	<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+	<ul id="archive" class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 ">
+
+	{% for post in site.posts %}
+	{% assign article = post %}
+	{% include header-color.html %}
+
+	<li><a href="{{article.url}}">
+		<span class="category {{categlogo}}">{{article.categories}}</span>  {{post.title}}<time >{{ article.date | date: "%b %-d, %Y" }} </time>
+	</a></li>
+	{% endfor %}
 
 
-
-</div>
+</ul>
+</section>

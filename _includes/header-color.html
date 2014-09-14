@@ -1,0 +1,14 @@
+	{% if article.categories contains 'workflow' %}
+		{% assign categlogo = "alfredworkflow" %}
+	{% elsif article.categories contains 'tricks' %}
+		{% assign categlogo = "tricks" %}
+	{% elsif article.categories contains 'server' %}
+		{% assign categlogo = "server" %}
+	{% elsif article.categories contains 'media' %}
+		{% assign categlogo = "media-center" %}
+	{% elsif article.categories contains 'development' %}
+		{% assign categlogo = "development" %}
+	{% else %}
+		{% assign categlogo = "default" %}
+
+	{% endif %}	

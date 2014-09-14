@@ -1,18 +1,7 @@
 <div class="post   col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
-	{% if article.categories contains 'workflow' %}
-		{% assign categlogo = "alfredworkflow" %}
-	{% elsif article.categories contains 'tricks' %}
-		{% assign categlogo = "tricks" %}
-	{% elsif article.categories contains 'server' %}
-		{% assign categlogo = "server" %}
-	{% elsif article.categories contains 'media' %}
-		{% assign categlogo = "media-center" %}
-	{% elsif article.categories contains 'development' %}
-		{% assign categlogo = "development" %}
-	{% else %}
-		{% assign categlogo = "default" %}
 
-	{% endif %}	
+{% include header-color.html %}
+
 <div class="headband  col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
 	<div class="category   col-lg-6 col-md-6 col-sm-6 col-xs-12 nopadding {{ categlogo }}">
 
@@ -22,8 +11,8 @@
 	</div>	
 	<ul class="inline col-lg-6 col-md-6 col-sm-6 col-xs-12 nopadding sharing">
 
- 		<li class="readability"><a href="https://readability.com/save?url=<?php echo get_permalink(); ?>" target="_blank"></a></li>
-		<li class="pocket"><a href="https://getpocket.com/save?url=<?php echo get_permalink(); ?>"target="_blank"></a></li>
+ 		<li class="readability"><a href="https://readability.com/save?url={{ article.url }}"  target="_blank"></a></li>
+		<li class="pocket"><a href="https://getpocket.com/save?url={{ article.url }}" target="_blank"></a></li>
 												
 		<li class="color-twitter"><a target="_blank" href="https://twitter.com/intent/tweet?text={{article.title}}&url={{site.url}}{{ article.url }}" ><i class="fa fa-twitter"></i></a></li>
 		<li class="color-facebook"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{ article.url }}"><i class="fa fa-facebook"></i></a></li>
@@ -39,7 +28,7 @@
 <section class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
 	<header>
     <a href="{{ article.url }}"><h1> {{ article.title }}</h1></a>
-    <p class="meta">{{ article.date | date: "%b %-d, %Y" }}{% if article.author %} • {{ article.author }}{% endif %}{% if article.meta %} • {{ article.meta }}{% endif %}</p>
+    <date>{{ article.date | date: "%b %-d, %Y" }} </date>
   </header>
 
   <article>

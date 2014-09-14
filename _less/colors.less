@@ -6,8 +6,8 @@
 
 @background-color                 : white;
 @warning-test-color               : transparent;
-@link-color                       : red;
-@link-color-hover                 : green;
+@link-color                       : @colored-band-one;
+@link-color-hover                 : red;
 @link-color-inline                : black; /*for inline content */
 
 /* ########### HEADER #########*/
@@ -62,6 +62,21 @@
 @post-categ-media                 : @colored-band-four;
 @post-categ-development           : #02243A;
 
+/* Post */
+@post-text-color: #434343;
+@post-title-color: red;
+@post-subtitle-color: black;
+@post-date-color : gray;
+
+/* Archive */
+
+@archive-categ-text-color:white;
+@archive-categ-default-color: @post-headband-categ-default-color;
+@archive-title-color:@post-text-color;
+@archive-date-color:@post-date-color;
+
+
+
 /* Archive button */
 @archivebt-bg-color               : #333;
 @archivebt-bg-color-hover         : #252525;
@@ -73,7 +88,7 @@
 
 
 /* ### FOOTER #### */
-@footer-line-color                :#e5e5e5;
+@line-color                :#e5e5e5;
 @footer-line-height               : 1px;
 @footer-links-color               : black;
 @footer-links-color-hover         : @link-color-hover;
