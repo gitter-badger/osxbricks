@@ -1,3 +1,20 @@
+
 		</article>
+<div class="linksdiv">
+		<ul class="links inline">
+		{% if article.download %}
+			<li> <a href="{{article.download}}">Download</a></li>
+		{% endif %}
+		{% if article.source %}
+			<li> <a href="{{article.source}}" target="_blank">Sources</a></li>
+		{% endif %}
+	</div>
+		</ul>
+		{% if categlogo == "alfredworkflow" %}
+		<div>
+		<a class="alfredLinks" href="{{site.url}}/?category=alfredworkflow">Discover more Alfred Workflow.</a>
+	
+		{% endif %}
+
 	</section>
 </div>
