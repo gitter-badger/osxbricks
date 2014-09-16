@@ -1,8 +1,11 @@
 ---
 layout: author
 title: Léo Derbois
-avatar: 
+description: Developer analyst </br> OSX & iOS
+avatar: /assets/profile_photo.jpg
+site: http://www.leoderbois.com
 permalink: /author/
+
 ---
 
 # In Construction !

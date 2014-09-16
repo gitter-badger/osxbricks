@@ -1,5 +1,10 @@
 <section class="row">
+{% if page.url == "/404.html" %}
+	<div id="quatre-archive"class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 ">{{page.archive}}</div>
+{% endif %}
+
 	<ul id="archive" class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 ">
+
 
 	{% for post in site.posts %}
 	{% assign article = post %}
