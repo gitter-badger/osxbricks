@@ -8,10 +8,14 @@
 
 @responsive-min: @screen-sm-min;
 html {
+    min-height: 100%;
+
 }
 body {
   background-color: @background-color;
   font-family: @font-global;
+    min-height: 100%;
+
 }
 body a{
   color: @link-color;
@@ -22,11 +26,11 @@ body a:hover{
 }
 
 .nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+ padding: 0 !important;
+ margin: 0 !important;
 }
 time{
-    font-style: italic;
+  font-style: italic;
 }
 /* ######### INLINE LINK ########### */
 ul.inline{
@@ -165,14 +169,14 @@ a:hover#headband{
   height: @headband-logo-size;
   width:@headband-logo-size;
   @media(max-width: @responsive-min){
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      @media(max-width: 600px){
-        background-size: @headband-logo-size-sm @headband-logo-size-sm;
-        height: @headband-logo-size-sm;
-        width:@headband-logo-size-sm;
-      }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @media(max-width: 600px){
+      background-size: @headband-logo-size-sm @headband-logo-size-sm;
+      height: @headband-logo-size-sm;
+      width:@headband-logo-size-sm;
+    }
 
   }
 }
@@ -192,7 +196,7 @@ a:hover#headband{
   display: inline-block;
   font-size: @headband-font-size;
   font-family:@headband-font;
-    @media(max-width: @responsive-min){
+  @media(max-width: @responsive-min){
     display:none;
   }
 
@@ -202,7 +206,7 @@ a:hover#headband{
   display: inline-block;
   font-size: @headband-font-size;
   font-family:@headband-font-light;
-    @media(max-width: @responsive-min){
+  @media(max-width: @responsive-min){
     display:none;
   }
 }
@@ -245,9 +249,9 @@ a:hover#headband{
 }
 
 .post div.headband div.category{
-    background-color: @post-headband-categ-default-color;
-    height: @post-headband-height;
-    @media(min-width:@screen-md-min){
+  background-color: @post-headband-categ-default-color;
+  height: @post-headband-height;
+  @media(min-width:@screen-md-min){
     max-width: @post-category-maxwitdh-normal;
   }
 
@@ -255,20 +259,20 @@ a:hover#headband{
 }
 
 .post div.headband div.category.tricks{
-    background-color: @post-categ-tricks;
+  background-color: @post-categ-tricks;
 }
 
 .post div.headband div.category.server{
-    background-color: @post-categ-server;
+  background-color: @post-categ-server;
 }
 .post div.headband div.category.media{
-    background-color: @post-categ-media;
+  background-color: @post-categ-media;
 }
 .post div.headband div.category.development{
-    background-color: @post-categ-development;
+  background-color: @post-categ-development;
 }
 .post div.headband div.category.alfredworkflow{
-    background-color: @post-categ-workflow;
+  background-color: @post-categ-workflow;
 }
 
 .post div.headband div.category div.logo{
@@ -280,14 +284,14 @@ a:hover#headband{
   float: left;
   border-right: 1px solid @line-color;
   @media(max-width: @screen-md-min){
-      display:none;
-      @media(max-width: @screen-sm-min){
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        border-right : transparent;
-      }
+    display:none;
+    @media(max-width: @screen-sm-min){
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      border-right : transparent;
+    }
   }
 }
 
@@ -328,11 +332,11 @@ a:hover#headband{
   margin-right: auto;
   color:@post-headband-categ-txt-color;
   @media(max-width: @screen-sm-min){
-        display:none;
+    display:none;
   }
 }
 .post div.headband ul.sharing{
-top: @post-headband-sharing-margin-top;
+  top: @post-headband-sharing-margin-top;
   left: @post-headband-sharing-margin-left; 
   font-size: @post-headband-sharing-ft-size;
   margin-top: 5px !important;
@@ -370,58 +374,63 @@ top: @post-headband-sharing-margin-top;
   font-family: @post-date-font;
   font-size: @post-date-size;
 }
-.post section article a{
+article{
+  color: @post-text-color;
+}
+article a{
   font-weight:bold;
 }
 
-.post section article a:hover{
+article a:hover{
   text-decoration: underline;
 }
-.post section article h2,
-.post section article h3,
-.post section article h4{
+article h2,
+article h3,
+article h4{
   color: @post-subtitle-color;
   font-family: @post-subtitles-font;
   margin-left: 0px;
 }
 
-.post section article h2:before{
+article h2:before{
   font: 36px Times;
   padding-right: 6px;
   content: '›';
 }
 
 
-.post section article p,
-.post section article blockquote,
-.post section article pre{
+article p,
+article blockquote,
+article pre{
   margin-left: @post-text-margin;
 
 }
-.post section article p{
-      text-align: justify;
-    text-justify: inter-word;
+article p{
+  text-align: justify;
+  text-justify: inter-word;
 
 }
-.post section article blockquote p{
+article blockquote p{
   margin-left: 0px;
-        text-align:left;
+  text-align:left;
 }
-.post section article ul {
+article ul {
   list-style:none;
   padding-left: 1.3em ;
 }
 
-.post section article ul li:before {
+article ul li:before {
   content: @post-list-icon;
-   font-family: FontAwesome;
+  font-family: FontAwesome;
+ /* font-size: @post-list-icon-size;*/
   display: inline-block;
   margin-left: -1.3em;
   width: 1.3em;
+  vertical-align: middle;
 }
 
 
-.post section article img{
+article img{
   max-width: @post-image-max-width;
   height: auto;
   display: block;
@@ -429,13 +438,14 @@ top: @post-headband-sharing-margin-top;
   margin-left: auto;
   margin-right: auto;
 
+
 }
 
 .post section div.linksdiv{
-float:right;
-position:relative;
-left:-50%;
-text-align:left;
+  float:right;
+  position:relative;
+  left:-50%;
+  text-align:left;
 }
 
 
@@ -474,27 +484,99 @@ text-align:left;
   font-weight: 300;
 }  
 
-/* Author */
+/*#### Author ####*/
 .author header{
   text-align: center;
+
 }
 .author  img{
  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .author header a img {
-    background-repeat: no-repeat;
-  background-size: 250px 250px;
-  height: 250px;
-  width:250px;
+  background-repeat: no-repeat;
+  background-size: @author-avatar-size @author-avatar-size;
+  height: @author-avatar-size;
+  width:@author-avatar-size;
+  border-radius: @author-avatar-radius;
+  border : @author-avatar-border-size solid @author-avatar-border-color;
+    transition : all @author-img-speed ;
 
-  border-radius: 100%;
-  border-radius: 4px solid red;
+  -moz-transition : all @author-img-speed ;
+  -ms-transition : all @author-img-speed ;
+  -webkit-transition : all @author-img-speed ;
+  -o-transition : all @author-img-speed ;
+
+}
+.author header a:hover img{
+  transform:  @author-img-scale;
+  -webkit-transform:  @author-img-scale;
+  -moz-transform:  @author-img-scale;
+  -o-transform:  @author-img-scale;
+  -ms-transform:  @author-img-scale;
+}
+.author header div{
+  margin-top:@author-header-txt-margin-top;
+  margin-bottom:@author-header-txt-margin-btm;
 }
 
+.author header div .name{
+  margin-bottom:@author-header-name-margin-btm;
+  font-size: @author-title-font-size;
+  font-family:@author-title-font ; 
+  font-weight: bold;
+  color:@author-name-color;
+
+}
+.author header div .description{
+  font-size: @author-title-font-size;
+  font-family: @author-title-font; 
+  color:@author-description-color;
+}
+.author header ul{
+  margin-top: @author-social-margin-top;
+
+}
+.author header ul li{
+  min-width: @author-social-li-size;
+}
+.author header ul li a{
+  color: @author-social-text-color;
+  background-color: @author-social-bg-color;
+  margin-left: @author-social-li-space;
+  padding: @author-social-li-padding;
+  border-radius:@author-social-li-radius;
+  min-width: @author-social-li-radius;
+  font-size:@author-social-li-size;
+}
+
+.author header ul li a:hover{
+  color: @author-social-text-color-hover;
+  background-color: @author-social-bg-color-hover;
+}
+
+.author article{
+  margin-top: ;
+  margin-bottom: ;
+}
+
+/*#### 404 ####*/
+
+#quatre{
+  text-align: center;
+  margin:40px;
+  font-size: @quatre-size ;
+}
+#quatre p{
+  text-align: center;
+}
+#quatre-archive{
+  font-size: @quatre-archive-size;
+  color:@quatre-archive-color;
+}
 /* Archive PAge */
 
 #archive{
@@ -506,7 +588,6 @@ text-align:left;
   list-style: none;
   margin-bottom: @archive-space;
   font-family: @archive-title-font;
-
 }
 #archive li span.category{
   border-radius: 3px;
@@ -518,20 +599,20 @@ text-align:left;
 }
 
 #archive li span.category.tricks{
-    background-color: @post-categ-tricks;
+  background-color: @post-categ-tricks;
 }
 
 #archive li span.category.server{
-    background-color: @post-categ-server;
+  background-color: @post-categ-server;
 }
 #archive li span.category.media{
-    background-color: @post-categ-media;
+  background-color: @post-categ-media;
 }
 #archive li span.category.development{
-    background-color: @post-categ-development;
+  background-color: @post-categ-development;
 }
 #archive li span.category.alfredworkflow{
-    background-color: @post-categ-workflow;
+  background-color: @post-categ-workflow;
 }
 
 
@@ -553,14 +634,14 @@ text-align:left;
   text-align: center;
   font-size: 30px;
 
-}*/
+  }*/
 
 a#archive-button{
-  font-family: @archive-bt-font;
-  font-size: @archive-bt-ft-size ;
-  text-transform: uppercase;
+    font-family: @archive-bt-font;
+    font-size: @archive-bt-ft-size ;
+    text-transform: uppercase;
 
-  border-radius: @archivebt-radius;
+    border-radius: @archivebt-radius;
 /*  border-style: solid;
   border-width: @archivebt-brd-witdh;
   border-color: @archivebt-border-color;*/
@@ -570,8 +651,6 @@ a#archive-button{
   padding-bottom: @archivebt-padding;
   text-align: center;
 
-/*  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);*/
 
   transition : all @archivebt-animation-time;
   /*browser specific versions*/
