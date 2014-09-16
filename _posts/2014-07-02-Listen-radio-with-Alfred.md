@@ -4,14 +4,12 @@ title:  "Listen radio with Alfred"
 date:   2014-07-02 22:59:35
 categories: Alfred Workflow
 
-source: https://github.com/leoderbois/WebRadios-Alfred-Workflow
-download: http://raw.github.com/leoderbois/WebRadios-Alfred-Workflow/blob/master/WebRadios.alfredworkflow
-
 ---
 
 **[Radio](http://inft.ly/4qFB2Sc)** permits to launch your  radios with Alfred on your favorite native app , like [iTunes](https://www.apple.com/itunes/), Quicktime or [VLC](http://www.videolan.org/index.fr.html). This workflow is for [Powerpack](http://www.alfredapp.com/powerpack/) [Alfred](http://www.alfredapp.com)'s users.
 
 <img src="http://cl.ly/image/2E0P210R4204/radioWorkflow.gif" width="834" height="615" alt="Démonstatrion : radio avec alfred" class="aligncenter" />
+
 
 ## What i can do with Radio
 
