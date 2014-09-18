@@ -36,7 +36,7 @@ i've found these things to synchronize with **Xcode** :
 
 ## To resume in code
 
-{% highlight sh linenos %}
+{% highlight sh %}
 
 #!/bin/bash
 echo "------ Create Synchronisation Architecture ------"

@@ -894,12 +894,15 @@ article img {
 }
 /*#### 404 ####*/
 #quatre {
-  text-align: center;
   margin: 40px;
-  font-size: 24px;
+}
+#quatre div#chiffre {
+  font-size: 100px;
+  text-align: center;
 }
 #quatre p {
   text-align: center;
+  font-size: 24px;
 }
 #quatre-archive {
   font-size: 24px;
