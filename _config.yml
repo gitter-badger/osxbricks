@@ -10,7 +10,7 @@ feed: /feed.xml
 archivewords: Read older articles
 
 # Site
-metadata: ["OS X BRicks","OSXBricks","OSX Bricks","OS X","Xcode","Léo Derbois","os x server","OS X development","Some bricks for your code and your OS X"] # Metadata for 
+keywords: ["OS X BRicks","OSXBricks","OSX Bricks","OS X","Xcode","Léo Derbois","os x server","OS X development","Some bricks for your code and your OS X"] # Metadata for 
 googleAnalyticsID: UA-47817551-2
 favicon         : /assets/favicon.ico 		# website Favicon  / Need to be local (in assets forlder)
 home_articles_nb : 6

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Synchronize Xcode preferences"
+description : How to synchronize your Xcode preferences beetwen Mac
+keywords: synchornization, iCloudDrive, Dropbox
 date:   2014-09-17 22:22:22
 categories: tricks
 ---
