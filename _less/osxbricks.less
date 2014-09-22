@@ -15,6 +15,7 @@ body {
   background-color: @background-color;
   font-family: @font-global;
     min-height: 100%;
+    width: 100%;
 
 }
 body a{
@@ -28,6 +29,13 @@ body a:hover{
 .nopadding {
  padding: 0 !important;
  margin: 0 !important;
+}
+
+.nopaddingresponsive{
+  @media(max-width: @responsive-min){
+     padding: 0 !important;
+      margin: 0 !important;
+  }
 }
 time{
   font-style: italic;
@@ -336,10 +344,14 @@ a:hover#headband{
   }
 }
 .post div.headband ul.sharing{
-  top: @post-headband-sharing-margin-top;
-  left: @post-headband-sharing-margin-left; 
+/*  top: @post-headband-sharing-margin-top;
+  left: @post-headband-sharing-margin-left; */
   font-size: @post-headband-sharing-ft-size;
   margin-top: 5px !important;
+  width: 350px;
+  @media(max-width: @screen-sm-min){
+    text-align :center;
+    width: 100%;  }
 }
 .post div.headband ul.sharing li{
   margin-left: @post-headband-sharing-space !important;
@@ -406,7 +418,9 @@ article h4,
 article h5,
 article h6{
   margin-left: @post-text-margin;
-
+  @media(max-width: @screen-sm-min){
+    margin-left:0px;
+  }
 }
 article p{
   text-align: justify;

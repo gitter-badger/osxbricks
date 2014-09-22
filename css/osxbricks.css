@@ -64,6 +64,19 @@
 .post pre.terminal code {
   background-color: #333;
 }
+.post pre,
+.post code {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
 .highlight {
   background: #ffffff;
 }
@@ -326,7 +339,7 @@
 }
 .post > .highlight pre code {
   display: block;
-  white-space: pre;
+  white-space: pre-wrap;
   overflow-x: auto;
   word-wrap: normal;
 }
@@ -383,6 +396,7 @@ body {
   background-color: #ffffff;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   min-height: 100%;
+  width: 100%;
 }
 body a {
   color: #327ea3;
@@ -394,6 +408,12 @@ body a:hover {
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
+}
+@media (max-width: 768px) {
+  .nopaddingresponsive {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 }
 time {
   font-style: italic;
@@ -696,10 +716,17 @@ a:hover#headband {
   }
 }
 .post div.headband ul.sharing {
-  top: 10px;
-  left: 30px;
+  /*  top: @post-headband-sharing-margin-top;
+  left: @post-headband-sharing-margin-left; */
   font-size: 2.5em;
   margin-top: 5px !important;
+  width: 350px;
+}
+@media (max-width: 768px) {
+  .post div.headband ul.sharing {
+    text-align: center;
+    width: 100%;
+  }
 }
 .post div.headband ul.sharing li {
   margin-left: 15px !important;
@@ -758,6 +785,17 @@ article h4,
 article h5,
 article h6 {
   margin-left: 20px;
+}
+@media (max-width: 768px) {
+  article p,
+  article blockquote,
+  article pre,
+  article h3,
+  article h4,
+  article h5,
+  article h6 {
+    margin-left: 0px;
+  }
 }
 article p {
   text-align: justify;
