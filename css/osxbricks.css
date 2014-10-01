@@ -389,14 +389,11 @@ table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
-html {
-  min-height: 100%;
-}
 body {
   background-color: #ffffff;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  min-height: 100%;
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 body a {
   color: #327ea3;
@@ -853,10 +850,12 @@ article img {
   clear: both;
   color: #5d2182;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  /*  margin-left: auto;
+  margin-right: auto;*/
+  padding-left: 30px;
   display: block;
-  width: 400px;
+  /*  width: @post-alfredlink-width;
+*/
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: 300;
@@ -926,10 +925,10 @@ article img {
   color: #ff9900;
   background-color: #000000;
 }
-.author article {
+/*.author article{
   margin-top: ;
   margin-bottom: ;
-}
+}*/
 /*#### 404 ####*/
 #quatre {
   margin: 40px;
