@@ -8,13 +8,14 @@
 
 @responsive-min: @screen-sm-min;
 html {
-    min-height: 100%;
+
 
 }
 body {
   background-color: @background-color;
   font-family: @font-global;
-    min-height: 100%;
+  width: auto;
+  height: auto;
 
 }
 body a{
@@ -28,6 +29,13 @@ body a:hover{
 .nopadding {
  padding: 0 !important;
  margin: 0 !important;
+}
+
+.nopaddingresponsive{
+  @media(max-width: @responsive-min){
+     padding: 0 !important;
+      margin: 0 !important;
+  }
 }
 time{
   font-style: italic;
@@ -336,10 +344,14 @@ a:hover#headband{
   }
 }
 .post div.headband ul.sharing{
-  top: @post-headband-sharing-margin-top;
-  left: @post-headband-sharing-margin-left; 
+/*  top: @post-headband-sharing-margin-top;
+  left: @post-headband-sharing-margin-left; */
   font-size: @post-headband-sharing-ft-size;
   margin-top: 5px !important;
+  width: 350px;
+  @media(max-width: @screen-sm-min){
+    text-align :center;
+    width: 100%;  }
 }
 .post div.headband ul.sharing li{
   margin-left: @post-headband-sharing-space !important;
@@ -406,7 +418,9 @@ article h4,
 article h5,
 article h6{
   margin-left: @post-text-margin;
-
+  @media(max-width: @screen-sm-min){
+    margin-left:0px;
+  }
 }
 article p{
   text-align: justify;
@@ -478,11 +492,12 @@ article img{
   clear:both;
   color: @post-alfredlink-color;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+/*  margin-left: auto;
+  margin-right: auto;*/
+  padding-left: 30px;
   display: block;
-  width: @post-alfredlink-width;
-  margin-top: @post-alfredlink-margin-top;
+/*  width: @post-alfredlink-width;
+*/  margin-top: @post-alfredlink-margin-top;
   margin-bottom: @post-alfredlink-margin-btm;
   font-weight: 300;
 }  
@@ -561,20 +576,25 @@ article img{
   background-color: @author-social-bg-color-hover;
 }
 
-.author article{
+/*.author article{
   margin-top: ;
   margin-bottom: ;
-}
+}*/
 
 /*#### 404 ####*/
-
 #quatre{
-  text-align: center;
   margin:40px;
-  font-size: @quatre-size ;
+
+}
+#quatre div#chiffre{
+  font-size: @quatre-chiffre-size;
+  text-align:center;
 }
 #quatre p{
   text-align: center;
+    text-align: center;
+    font-size: @quatre-size ;
+
 }
 #quatre-archive{
   font-size: @quatre-archive-size;

@@ -1,6 +1,5 @@
 
-<div class="row">
-	<div class="col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
+    <div class="col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 col-xs-offset-0 nopaddingresponsive">
 		  {% assign countArticles = '0' %}
 		 {% for post in site.posts | limit:site.home_articles_nb %}
 		    {% capture countArticles %}{{ countArticles | plus: '1' }}{% endcapture %} <!-- Counting posts printed -->
@@ -12,7 +11,6 @@
 		    {% include postui-bottom.html%}
 		 {% endfor %}
     </div>
-</div>
 
 
 {% capture allpostsnb %}{{ site.posts | size }}{% endcapture %} <!-- number of post in INT -->

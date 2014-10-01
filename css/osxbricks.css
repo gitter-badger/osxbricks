@@ -64,6 +64,19 @@
 .post pre.terminal code {
   background-color: #333;
 }
+.post pre,
+.post code {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
 .highlight {
   background: #ffffff;
 }
@@ -326,7 +339,7 @@
 }
 .post > .highlight pre code {
   display: block;
-  white-space: pre;
+  white-space: pre-wrap;
   overflow-x: auto;
   word-wrap: normal;
 }
@@ -376,13 +389,11 @@ table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
-html {
-  min-height: 100%;
-}
 body {
   background-color: #ffffff;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 body a {
   color: #327ea3;
@@ -394,6 +405,12 @@ body a:hover {
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
+}
+@media (max-width: 768px) {
+  .nopaddingresponsive {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 }
 time {
   font-style: italic;
@@ -696,10 +713,17 @@ a:hover#headband {
   }
 }
 .post div.headband ul.sharing {
-  top: 10px;
-  left: 30px;
+  /*  top: @post-headband-sharing-margin-top;
+  left: @post-headband-sharing-margin-left; */
   font-size: 2.5em;
   margin-top: 5px !important;
+  width: 350px;
+}
+@media (max-width: 768px) {
+  .post div.headband ul.sharing {
+    text-align: center;
+    width: 100%;
+  }
 }
 .post div.headband ul.sharing li {
   margin-left: 15px !important;
@@ -759,6 +783,17 @@ article h5,
 article h6 {
   margin-left: 20px;
 }
+@media (max-width: 768px) {
+  article p,
+  article blockquote,
+  article pre,
+  article h3,
+  article h4,
+  article h5,
+  article h6 {
+    margin-left: 0px;
+  }
+}
 article p {
   text-align: justify;
   text-justify: inter-word;
@@ -815,10 +850,12 @@ article img {
   clear: both;
   color: #5d2182;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  /*  margin-left: auto;
+  margin-right: auto;*/
+  padding-left: 30px;
   display: block;
-  width: 400px;
+  /*  width: @post-alfredlink-width;
+*/
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: 300;
@@ -888,18 +925,21 @@ article img {
   color: #ff9900;
   background-color: #000000;
 }
-.author article {
+/*.author article{
   margin-top: ;
   margin-bottom: ;
-}
+}*/
 /*#### 404 ####*/
 #quatre {
-  text-align: center;
   margin: 40px;
-  font-size: 24px;
+}
+#quatre div#chiffre {
+  font-size: 100px;
+  text-align: center;
 }
 #quatre p {
   text-align: center;
+  font-size: 24px;
 }
 #quatre-archive {
   font-size: 24px;
