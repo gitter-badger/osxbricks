@@ -356,6 +356,8 @@
 /* #### FOOTER ##### */
 table {
   margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   border-collapse: collapse;
 }
@@ -962,6 +964,7 @@ article img {
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #ffffff;
   padding: 4px;
+  text-transform: uppercase;
 }
 #archive li span.category.tricks {
   background-color: #327ea3;

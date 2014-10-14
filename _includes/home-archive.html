@@ -9,12 +9,15 @@
 	{% for post in site.posts %}
 	{% assign article = post %}
 	{% include header-color.html %}
-
-	<li><a href="{{article.url}}">
+<!-- 
+<li><a href="{{article.url}}">
 		<span class="category {{categlogo}}">{{article.categories}}</span>  {{post.title}}<time >{{ article.date | date: "%b %-d, %Y" }} </time>
-	</a></li>
-	{% endfor %}
+	</a></li>  -->
 
+		<li class="row"><a href="{{article.url}}">
+		<span class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><span class="category {{categlogo}}">{{article.categories}}</span></span><span class="col-lg-10 col-md-8 col-sm-8 col-xs-8">   {{post.title}}<time >{{ article.date | date: "%b %-d, %Y" }} </time></span>
+	</a></li> 
+	{% endfor %}
 
 </ul>
 </section>
