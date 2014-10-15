@@ -606,40 +606,46 @@ article img{
   border-top: 1px solid @line-color;
   padding-top:@archive-padding-top;
 }
-#archive li {
+#archive a {
   font-size: @archive-size;
   list-style: none;
   margin-bottom: @archive-space;
   font-family: @archive-title-font;
+    @media(max-width: @responsive-min){
+      text-align:center;
+    }
 }
-#archive li span.category{
+
+#archive a div.category{
   border-radius: 3px;
   background-color: @archive-categ-default-color;
   font-family: @archive-categ-font;
   color:@archive-categ-text-color;
   padding: 4px;
+   text-transform: uppercase;
+   text-align:center;
 
 }
 
-#archive li span.category.tricks{
+#archive a div.category.tricks{
   background-color: @post-categ-tricks;
 }
 
-#archive li span.category.server{
+#archive a div.category.server{
   background-color: @post-categ-server;
 }
-#archive li span.category.media{
+#archive a div.category.media{
   background-color: @post-categ-media;
 }
-#archive li span.category.development{
+#archive a div.category.development{
   background-color: @post-categ-development;
 }
-#archive li span.category.alfredworkflow{
+#archive a div.category.alfredworkflow{
   background-color: @post-categ-workflow;
 }
 
 
-#archive li time{
+#archive a time{
   font-family: @archive-date-font;
   font-size: @archive-date-size;
   float: right;
