@@ -3,21 +3,18 @@
 	<div id="quatre-archive"class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 ">{{page.archive}}</div>
 {% endif %}
 
-	<ul id="archive" class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 ">
-
+	<div id="archive" class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0 ">
 
 	{% for post in site.posts %}
 	{% assign article = post %}
 	{% include header-color.html %}
-<!-- 
-<li><a href="{{article.url}}">
-		<span class="category {{categlogo}}">{{article.categories}}</span>  {{post.title}}<time >{{ article.date | date: "%b %-d, %Y" }} </time>
-	</a></li>  -->
 
-		<li class="row"><a href="{{article.url}}">
-		<span class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><span class="category {{categlogo}}">{{article.categories}}</span></span><span class="col-lg-10 col-md-8 col-sm-8 col-xs-8">   {{post.title}}<time >{{ article.date | date: "%b %-d, %Y" }} </time></span>
-	</a></li> 
+	<a  class="row" href="{{article.url}}"> 
+
+ 		<div class="col-lg-3 col-md-4 col-sm-4 hidden-xs"><div class="category {{categlogo}}">{{article.categories}}</div></div>
+		<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12"> {{post.title}}</div>
+		<time class="col-lg-2 col-md-2 col-sm-2 col-xs-12">{{ article.date | date: "%b %-d, %Y" }} </time>
+	</a> 
 	{% endfor %}
-
-</ul>
+ </div>
 </section>

@@ -952,36 +952,42 @@ article img {
   border-top: 1px solid #e5e5e5;
   padding-top: 30px;
 }
-#archive li {
+#archive a {
   font-size: 20px;
   list-style: none;
   margin-bottom: 15px;
   font-family: 'PT Sans', sans-serif;
 }
-#archive li span.category {
+@media (max-width: 768px) {
+  #archive a {
+    text-align: center;
+  }
+}
+#archive a div.category {
   border-radius: 3px;
   background-color: #000000;
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #ffffff;
   padding: 4px;
   text-transform: uppercase;
+  text-align: center;
 }
-#archive li span.category.tricks {
+#archive a div.category.tricks {
   background-color: #327ea3;
 }
-#archive li span.category.server {
+#archive a div.category.server {
   background-color: #4ca5d0;
 }
-#archive li span.category.media {
+#archive a div.category.media {
   background-color: #e82c0c;
 }
-#archive li span.category.development {
+#archive a div.category.development {
   background-color: #02243a;
 }
-#archive li span.category.alfredworkflow {
+#archive a div.category.alfredworkflow {
   background-color: #310d42;
 }
-#archive li time {
+#archive a time {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 16px;
   float: right;
