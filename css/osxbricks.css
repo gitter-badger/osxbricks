@@ -777,7 +777,6 @@ article h2:before {
   content: '›';
 }
 article p,
-article blockquote,
 article pre,
 article h3,
 article h4,
@@ -787,7 +786,6 @@ article h6 {
 }
 @media (max-width: 768px) {
   article p,
-  article blockquote,
   article pre,
   article h3,
   article h4,
@@ -795,6 +793,13 @@ article h6 {
   article h6 {
     margin-left: 0px;
   }
+}
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #ffbc38;
+  background-color: #eee;
 }
 article p {
   text-align: justify;
@@ -927,10 +932,9 @@ article img {
   color: #ff9900;
   background-color: #000000;
 }
-/*.author article{
-  margin-top: ;
-  margin-bottom: ;
-}*/
+.author article {
+  font-family: 'PT Sans', sans-serif;
+}
 /*#### 404 ####*/
 #quatre {
   margin: 40px;
