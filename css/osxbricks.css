@@ -599,7 +599,7 @@ a:hover#headband {
   background-color: #327ea3;
 }
 .post div.headband div.category.server {
-  background-color: #4ca5d0;
+  background-color: #d01040;
 }
 .post div.headband div.category.media {
   background-color: #e82c0c;
@@ -774,11 +774,11 @@ article ul {
   padding-left: 1.3em ;
 }
 article ul li:before {
-  content: '\f179';
+  content: '\f054';
   font-family: FontAwesome;
-  /* font-size: @post-list-icon-size;*/
+  font-size: 10px;
   display: inline-block;
-  margin-left: -1.3em;
+  margin-left: 1.3em;
   width: 1.3em;
   vertical-align: middle;
 }
@@ -939,7 +939,7 @@ article img {
   background-color: #327ea3;
 }
 #archive a div.category.server {
-  background-color: #4ca5d0;
+  background-color: #d01040;
 }
 #archive a div.category.media {
   background-color: #e82c0c;

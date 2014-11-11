@@ -501,6 +501,18 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_posts\/2014-11-11-Create-Simple-Daemon.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 0,
+		"expandTabs": 0,
+		"fileType": 4096,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/2014-11-11-Create-Simple-Daemon.md",
+		"outputAbbreviatedPath": "\/_posts\/2014-11-11-Create-Simple-Daemon.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/404.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -556,7 +568,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10025,
+		"initialSize": 9284,
 		"inputAbbreviatedPath": "\/_site\/assets\/category\/server.png",
 		"outputAbbreviatedPath": "\/_site\/assets\/category\/server.png",
 		"outputPathIsOutsideProject": 0,
@@ -660,6 +672,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/Create-Simple-Daemon\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/Create-Simple-Daemon\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/css\/osxbricks.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/css\/osxbricks.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/Documentation-in-Xcode\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -754,7 +784,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10025,
+		"initialSize": 9284,
 		"inputAbbreviatedPath": "\/assets\/category\/server.png",
 		"outputAbbreviatedPath": "\/assets\/category\/server.png",
 		"outputPathIsOutsideProject": 0,
