@@ -1,0 +1,300 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+/*##################################
+VARIABLES 
+##################################*/
+
+/*############## HEADER ######### */
+/* ressources */
+$headband-logo-path       : url(/assets/logo.png);
+
+/* Sizes */ 
+$colored-band-height      : 2px;
+$colored-band-height-bottom     : 2px;
+$headband-width           :780px;
+$headband-margin          :50px;
+$headband-logo-size       :180px;
+$headband-logo-size-sm : 90px;
+
+/* Animations */
+$headband-animation-time  :200ms;
+$headband-animation-scale :scale(1.1);
+
+/* ##### PAGE ###### */
+
+/* General */
+$page-width-mobile        :100%;
+
+/* Social Headband*/
+$socialheadband-margin-lr :40px;
+$socialheadband-direction :right;
+$socialheadband-seperation: 8px;
+
+
+/*#### POST ####*/
+$post-text-margin:20px;
+
+$post-header-margin-btm: 30px;
+$post-image-max-width : 80%;
+$post-list-icon:'\f054';
+$post-list-icon-size:10px;
+
+ $post-margin-top:10px;
+  $post-margin-bottom:50px;
+/* headband */
+$post-headband-height : 60px;
+$post-headband-categ-margin-top:330px;
+$post-category-maxwitdh-normal : 560px;
+$post-headband-sharing-margin-top:10px;
+$post-headband-sharing-margin-left:30px;
+$post-headband-category-margin:10px;
+$post-headband-sharing-space:15px;
+
+
+
+/* links */
+$post-alfredlink-margin-btm : 30px;
+$post-alfredlink-margin-top : 30px;
+$post-alfredlink-width : 400px;
+
+$post-links-margin-btm : 30px;
+$post-links-margin-top : 30px;
+$post-links-radius:5px;
+$post-links-margin: 4px;
+$post-links-padding: 10px;
+
+/* Archive */
+$archive-space:15px;
+$archive-padding-top:30px;
+
+/* Archive button */
+$archivebt-radius:5px;
+$archivebt-brd-witdh:1px;
+$archivebt-padding:10px;
+$archivebt-animation-time: 200ms;
+
+/*#### Author Page ####*/
+$author-avatar-size: 180px; 
+$author-avatar-border-size: 2px;
+$author-avatar-radius:50%;
+
+
+$author-header-txt-margin-top:10px;
+$author-header-txt-margin-btm:30px;
+$author-header-name-margin-btm:5px;
+
+$author-social-margin-top:20px;
+$author-social-li-space:5px;
+$author-social-li-padding:10px;
+$author-social-li-min-width:200px;
+$author-social-li-radius:5px;
+$author-article-margin-top:10px;
+$author-article-margin-btm:50px;
+
+$author-img-speed :200ms;
+$author-img-scale:scale(1.1);
+
+/* ##### FOOTER ##### */
+
+$footer-line-width :300px;
+$footer-line-space : 10px;
+$footer-margin-top: 40px;
+$footer-margin-bottom:40px;
+
+/*##################################
+Fonts
+##################################*/
+$PTSans:'PT Sans', sans-serif;
+$Lato:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$HevleveticaNeueLight: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$HevleveticaNeueUltraLight:'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+/* ########### DEFAULT #########*/
+
+$font-global             : $HevleveticaNeueLight;
+
+/* ########### HEADER #########*/
+
+/* HEADERBAND */
+$headband-font           :$HevleveticaNeueLight;
+;
+$headband-font-light     : $HevleveticaNeueUltraLight;
+;
+$headband-font-size      : 120px;
+;
+
+/* ######### PAGE #########*/
+
+/* Social headband */
+$socialheadband-font-size: 2em;
+
+
+
+/* #### POST ####*/
+$post-headband-categ-ft-size:2em;
+$post-headband-categ-font:$Lato;
+$post-headband-sharing-ft-size: 2.5em;
+
+$post-font: $PTSans;
+$post-font-size: 18px;
+$post-title-font: $post-font;
+$post-title-font-size:35px;
+$post-subtitles-font:$post-font;
+
+
+$post-date-font:$HevleveticaNeueLight;
+$post-date-size:$post-font-size;
+/* Archive Page */
+$archive-size:20px;
+$archive-categ-font:$Lato;
+$archive-title-font:$PTSans;
+$archive-date-font:$HevleveticaNeueLight;
+$archive-date-size: 16px;
+
+
+/*#### Author ####*/
+$author-title-font:$Lato;
+$author-title-font-size:28px;
+$author-description-font:$HevleveticaNeueLight;
+$author-description-font-size:16px;
+
+$author-social-li-size:$post-font-size;
+
+/*#### 404 ####*/
+
+$quatre-size:24px;
+$quatre-archive-size:24px;
+$quatre-chiffre-size:100px;
+/* Archive button */
+
+$archive-bt-font : $Lato;
+$archive-bt-ft-size : 1em;
+/* #### FOOTER ##### */
+$footer-font : $Lato;
+$footer-links-size: 1em;
+$footer-copyright-size: .9em;
+
+
+/*###############################
+COLORS 
+################################*/
+/* Some color */
+
+$antracite                        :#282828;
+/* Colored Band */
+$colored-band-one                 : #327ea3;
+$colored-band-two                 : #4ca5d0;
+$colored-band-three               : #ffbc38;
+$colored-band-four                : #e82c0c;
+
+/* ########### DEFAULT #########*/
+
+
+$background-color                 : white;
+$warning-test-color               : transparent;
+$link-color                       : $colored-band-one;
+$link-color-hover                 : red;
+$link-color-inline                : black; /*for inline content */
+
+/* ########### HEADER #########*/
+
+
+/* HEADERBAND */
+$headband-text-color              : black;
+
+/* ######### PAGE #########*/
+
+/* Social headband */
+
+$color-facebook                   : #3b5998;
+$color-twitter                    : #00aced;
+$color-google                     : #dd4b39;
+$color-youtube                    : #bb0000;
+$color-linkedin                   : #007bb6;
+$color-instagram                  : #517fa4;
+$color-pinterest                  : #cb2027;
+$color-vine                       : #00bf8f;
+$color-snapchat                   : #fffc00;
+$color-flickr                     : #ff0084;
+$color-tumblr                     : #32506d;
+$color-vimeo                      : #aad450;
+$color-foursquare                 : #0072b1;
+
+
+$color-github                     : green;
+$color-email                      : red;
+$color-author                     : $color-email;
+$color-rss                        : orange;
+$color-pocket                     : pink;
+$color-readability                : red;
+
+/*#### POST ####*/
+$post-bg-color                    : $background-color;
+
+/* Headband */
+$post-headband-categ-default-color: black;
+$post-headband-categ-txt-color    : white;
+
+$post-headband-sharing-color      : #333;
+
+$post-categ-workflow              : #310D42;
+$post-categ-tricks                : $colored-band-one;
+$post-categ-server                : #d01040;
+$post-categ-media                 : $colored-band-four;
+$post-categ-development           : #02243A;
+
+/* Post */
+$post-text-color                  : #434343;
+$post-title-color                 : red;
+$post-subtitle-color              : black;
+$post-date-color                  : gray;
+
+$post-links-bg-color              :$post-categ-workflow;
+$post-links-bg-color-hover        :#5D2182;
+$post-links-txt-color             : white;
+$post-alfredlink-color            : #5D2182;
+/* Archive */
+
+$archive-categ-text-color         :white;
+$archive-categ-default-color      : $post-headband-categ-default-color;
+$archive-title-color              :$post-text-color;
+$archive-date-color               :$post-date-color;
+
+
+
+/* Archive button */
+$archivebt-bg-color               : #333;
+$archivebt-bg-color-hover         : #252525;
+$archivebt-txt-color              : #fc0;
+$archivebt-txt-color-hover        : #f90;
+$archivebt-border-color           : black;
+$archivebt-border-color-hover     : black;
+
+/*#### Author ####*/
+$author-avatar-border-color       :black;
+
+$author-name-color                : black;
+$author-description-color         : #434343;
+$author-social-text-color         : white;
+$author-social-text-color-hover   : #f90;
+$author-social-bg-color           : black ;
+$author-social-bg-color-hover     : black;
+
+/*#### 404 #####*/
+$quatre-archive-color:#434343;
+/* ### FOOTER #### */
+$line-color                       :#e5e5e5;
+$footer-line-height               : 1px;
+$footer-links-color               : black;
+$footer-links-color-hover         : $link-color-hover;
+$footer-copyright-color           : #9b9b9b;
+
+
+
+@import "osxbricks-layout";
+
+
+

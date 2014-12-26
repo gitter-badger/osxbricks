@@ -1,0 +1,734 @@
+@import "bootstrap-variables",
+        "github-table",
+        "code-theme"
+        ;
+
+$responsive-min:  768px;//$screen-sm-min;
+html {
+
+
+}
+body {
+  background-color: $background-color;
+  font-family: $font-global;
+  width: auto;
+  height: auto;
+
+}
+body a{
+  color: $link-color;
+}
+body a:hover{
+  color: $link-color-hover;
+  text-decoration: none;
+}
+
+.nopadding {
+ padding: 0 !important;
+ margin: 0 !important;
+}
+
+.nopaddingresponsive{
+  @media(max-width: $responsive-min){
+     padding: 0 !important;
+      margin: 0 !important;
+  }
+}
+time{
+  font-style: italic;
+}
+/* ######### INLINE LINK ########### */
+ul.inline{
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.inline li{
+  display: inline;
+  list-style: none;
+  list-style-type: none;
+}
+
+ul.inline li a{
+  color:$link-color-inline;
+  transition : all 500ms;
+  /*browser specific versions*/
+  -moz-transition : all 500ms;
+  -ms-transition : all 500ms;
+  -webkit-transition : all 500ms;
+  -o-transition : all 500ms;
+}
+
+li.pocket a {
+  background: url(/assets/readlater/pocket.png) center 0 no-repeat ;
+  display: inline-block;
+  float: left;
+  height: 48px;
+  width: 48px;
+  white-space:nowrap;  
+}
+
+li.pocket a:hover {
+  background: url(/assets/readlater/pocket-hover.png) center 0 no-repeat ;
+  
+}
+
+li.readability a {
+  display: block;
+  display: inline-block;
+  float: left;
+  height: 48px;
+  width: 48px;
+  white-space:nowrap;
+  background: url(/assets/readlater/readability.png) center 0 no-repeat ;
+  
+}
+
+li.readability a:hover {
+  background: url(/assets/readlater/readability-hover.png) center 0 no-repeat ;
+  
+}
+
+
+/*### General Hover ### */
+li.color-twitter a:hover{
+  color : $color-twitter;
+}
+li.color-facebook a:hover{
+  color : $color-facebook;
+}
+li.color-google a:hover{
+  color : $color-google;
+}
+li.color-github a:hover{
+  color : $color-github;
+}
+li.color-linkedin a:hover{
+  color : $color-linkedin;
+}
+li.color-email a:hover{
+  color : $color-email;
+}
+li.color-author a:hover{
+  color : $color-author;
+}
+li.color-rss a:hover{
+  color : $color-rss;
+}
+li.color-pocket a:hover{
+  color : $color-pocket;
+}
+li.color-readability a:hover{
+  color : $color-readability;
+}
+/*############# Header ##########*/
+
+/* Colpred band */
+.colored-band{height: $colored-band-height}
+.colored-band-one{background-color: $colored-band-one;}
+.colored-band-two{background-color: $colored-band-two;}
+.colored-band-three{background-color: $colored-band-three;}
+.colored-band-four{background-color: $colored-band-four;}
+
+/* handband */
+#headbandframe{
+  margin-top: $headband-margin;
+  margin-bottom: $headband-margin;
+
+}
+#headband {
+  width: $headband-width;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  @media(max-width: $responsive-min){
+    width: 100%;
+  }
+}
+
+a#headband {
+  text-decoration: none;
+  color: $headband-text-color;
+  transition : all $headband-animation-time;
+
+  -moz-transition : all $headband-animation-time;
+  -ms-transition : all $headband-animation-time;
+  -webkit-transition : all $headband-animation-time;
+  -o-transition : all $headband-animation-time;
+
+}
+a:hover#headband{
+  transform:  $headband-animation-scale;
+  -webkit-transform:  $headband-animation-scale;
+  -moz-transform:  $headband-animation-scale;
+  -o-transform:  $headband-animation-scale;
+  -ms-transform:  $headband-animation-scale;
+
+}
+#headband div#logo{
+  display: inline-block;
+  background-image: $headband-logo-path;
+  background-repeat: no-repeat;
+  background-size: $headband-logo-size $headband-logo-size;
+  height: $headband-logo-size;
+  width:$headband-logo-size;
+  @media(max-width: $responsive-min){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @media(max-width: 600px){
+      background-size: $headband-logo-size-sm $headband-logo-size-sm;
+      height: $headband-logo-size-sm;
+      width:$headband-logo-size-sm;
+    }
+
+  }
+}
+#headband h1#texts {
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding-bottom: 20px;
+  color: $headband-text-color;
+  @media(max-width: $responsive-min){
+    display:none;
+  }
+
+}
+
+
+#headband h1#texts div#osx {
+  display: inline-block;
+  font-size: $headband-font-size;
+  font-family:$headband-font;
+  @media(max-width: $responsive-min){
+    display:none;
+  }
+
+}
+
+#headband h1#texts div#bricks {
+  display: inline-block;
+  font-size: $headband-font-size;
+  font-family:$headband-font-light;
+  @media(max-width: $responsive-min){
+    display:none;
+  }
+}
+
+/* ############# Page ################*/
+
+#page{
+  background-color: $warning-test-color; 
+  min-height:200px;
+/*  width: $page-width;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+}
+/* Social band */
+#socialheadband{
+  text-align: $socialheadband-direction;
+  margin-right: $socialheadband-margin-lr;
+  margin-left: $socialheadband-margin-lr;
+  font-size: $socialheadband-font-size;
+
+  @media(max-width: $responsive-min){
+    text-align:center;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+#socialheadband li{
+  margin-left: $socialheadband-seperation;
+}
+
+/* ###### POST ####### */
+.post{
+  background-color: $post-bg-color;
+}
+
+.post  div.headband{
+  border-top: 1px solid $line-color;
+}
+
+.post div.headband div.category{
+  background-color: $post-headband-categ-default-color;
+  height: $post-headband-height;
+  @media(min-width:$screen-md-min){
+    max-width: $post-category-maxwitdh-normal;
+  }
+
+
+}
+
+.post div.headband div.category.tricks{
+  background-color: $post-categ-tricks;
+}
+
+.post div.headband div.category.server{
+  background-color: $post-categ-server;
+}
+.post div.headband div.category.media{
+  background-color: $post-categ-media;
+}
+.post div.headband div.category.development{
+  background-color: $post-categ-development;
+}
+.post div.headband div.category.alfredworkflow{
+  background-color: $post-categ-workflow;
+}
+
+.post div.headband div.category div.logo{
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  width:60px;
+  float: left;
+  border-right: 1px solid $line-color;
+  @media(max-width: $screen-md-min){
+    display:none;
+    @media(max-width: $screen-sm-min){
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      border-right : transparent;
+    }
+  }
+}
+
+/* logos */
+.post div.headband div.category div.logo.default {
+  background-image: url(/assets/category/default.png);
+  background-size: 44px 34px;
+}
+.post div.headband div.category div.logo.tricks {
+  background-image: url(/assets/category/tricks.png);
+  background-size: 44px 44px;
+}
+.post div.headband div.category div.logo.server {
+  background-image: url(/assets/category/server.png);
+  background-size: 44px 44px;
+}
+.post div.headband div.category div.logo.media-center {
+  background-image: url(/assets/category/media-center.png);
+  background-size: 44px 44px;
+}
+.post div.headband div.category div.logo.development {
+  background-image: url(/assets/category/development.png);
+  background-size: 44px 44px;
+}
+.post div.headband div.category div.logo.alfredworkflow {
+  background-image: url(/assets/category/alfred.png);
+  background-size: 44px 38px;
+}
+
+.post div.headband div.category div.title{
+  display: block;
+  margin-top: $post-headband-category-margin;
+  font-size: $post-headband-categ-ft-size;
+  font-family: $post-headband-categ-font;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  color:$post-headband-categ-txt-color;
+  @media(max-width: $screen-sm-min){
+    display:none;
+  }
+}
+.post div.headband ul.sharing{
+/*  top: $post-headband-sharing-margin-top;
+  left: $post-headband-sharing-margin-left; */
+  font-size: $post-headband-sharing-ft-size;
+  margin-top: 5px !important;
+  width: 350px;
+  @media(max-width: $screen-sm-min){
+    text-align :center;
+    width: 100%;  }
+}
+.post div.headband ul.sharing li{
+  margin-left: $post-headband-sharing-space !important;
+}
+
+
+/* Posts content */
+.post section{
+  font-family: $post-font;
+  font-size: $post-font-size;
+  margin-bottom: $post-margin-bottom;
+  margin-top:  $post-margin-top;
+}
+.post section header {
+  margin-bottom: $post-header-margin-btm;
+
+}
+.post section header a h1{
+  color: $post-title-color;
+  font-weight: bold;
+  font-family: $post-title-font;
+  font-size: $post-title-font-size;
+  margin-bottom: 0px;
+
+}
+.post section header a:hover h1{
+  color:$colored-band-two  ;
+}
+
+.post section header date{
+  color: $post-date-color;
+  font-family: $post-date-font;
+  font-size: $post-date-size;
+}
+article{
+  color: $post-text-color;
+}
+article a{
+  font-weight:bold;
+}
+
+article a:hover{
+  text-decoration: underline;
+}
+article h2,
+article h3,
+article h4{
+  color: $post-subtitle-color;
+  font-family: $post-subtitles-font;
+  margin-left: 0px;
+}
+
+article h2:before{
+  font: 36px Times;
+  padding-right: 6px;
+  content: '›';
+}
+
+article p,
+/*article blockquote,
+*/article pre,
+article h3,
+article h4,
+article h5,
+article h6{
+  margin-left: $post-text-margin;
+  @media(max-width: $screen-sm-min){
+    margin-left:0px;
+  }
+}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #d01040 /*$colored-band-three*/;
+    background-color: white;
+}
+article p{
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+article blockquote p{
+  margin-left: 0px;
+  text-align:left;
+}
+article ul {
+  list-style:none;
+  padding-left: 1.3em ;
+}
+
+article ul li:before {
+  content: $post-list-icon;
+  font-family: FontAwesome;
+  font-size: 10px;
+  display: inline-block;
+  margin-left: 1.3em;
+  width: 1.3em;
+  vertical-align: middle;
+}
+
+
+article img{
+  max-width: $post-image-max-width;
+  height: auto;
+  display: block;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.post section div.linksdiv{
+  float:right;
+  position:relative;
+  left:-50%;
+  text-align:left;
+}
+
+
+
+.post section ul.links{
+  margin-top: $post-links-margin-top;
+  margin-bottom: $post-links-margin-btm;
+  position:relative;
+  left:50%;
+}
+
+.post section ul.links li a{
+  color: $post-links-txt-color;
+  background-color: $post-links-bg-color;
+  padding: $post-links-padding;
+  margin: $post-links-margin;
+
+  text-align: center;
+  border-radius: $post-links-radius;
+}
+
+.post section ul.links li a:hover{
+  background-color: $post-links-bg-color-hover;
+
+}
+.post section div a.alfredLinks{
+  clear:both;
+  color: $post-alfredlink-color;
+  text-align: center;
+/*  margin-left: auto;
+  margin-right: auto;*/
+  display: block;
+/*  width: $post-alfredlink-width;
+*/  margin-top: $post-alfredlink-margin-top;
+  margin-bottom: $post-alfredlink-margin-btm;
+  font-weight: 300;
+}  
+
+/*#### Author ####*/
+.author {}
+.author header{
+  text-align: center;
+
+}
+.author img{
+ height: auto;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.author header a img {
+  background-repeat: no-repeat;
+  background-size: $author-avatar-size $author-avatar-size;
+  height: $author-avatar-size;
+  width:$author-avatar-size;
+  border-radius: $author-avatar-radius;
+  border : $author-avatar-border-size solid $author-avatar-border-color;
+    transition : all $author-img-speed ;
+
+  -moz-transition : all $author-img-speed ;
+  -ms-transition : all $author-img-speed ;
+  -webkit-transition : all $author-img-speed ;
+  -o-transition : all $author-img-speed ;
+
+}
+.author header a:hover img{
+  transform:  $author-img-scale;
+  -webkit-transform:  $author-img-scale;
+  -moz-transform:  $author-img-scale;
+  -o-transform:  $author-img-scale;
+  -ms-transform:  $author-img-scale;
+}
+.author header div{
+  margin-top:$author-header-txt-margin-top;
+  margin-bottom:$author-header-txt-margin-btm;
+}
+
+.author header div .name{
+  margin-bottom:$author-header-name-margin-btm;
+  font-size: $author-title-font-size;
+  font-family:$author-title-font ; 
+  font-weight: bold;
+  color:$author-name-color;
+
+}
+.author header div .description{
+  font-size: $author-title-font-size;
+  font-family: $author-title-font; 
+  color:$author-description-color;
+}
+.author header ul{
+  margin-top: $author-social-margin-top;
+
+}
+.author header ul li{
+  min-width: $author-social-li-size;
+}
+.author header ul li a{
+  color: $author-social-text-color;
+  background-color: $author-social-bg-color;
+  margin-left: $author-social-li-space;
+  padding: $author-social-li-padding;
+  border-radius:$author-social-li-radius;
+  min-width: $author-social-li-radius;
+  font-size:$author-social-li-size;
+}
+
+.author header ul li a:hover{
+  color: $author-social-text-color-hover;
+  background-color: $author-social-bg-color-hover;
+}
+
+.author article{
+  font-family: $PTSans;
+  }
+
+/*#### 404 ####*/
+#quatre{
+  margin:40px;
+
+}
+#quatre div#chiffre{
+  font-size: $quatre-chiffre-size;
+  text-align:center;
+}
+#quatre p{
+  text-align: center;
+    text-align: center;
+    font-size: $quatre-size ;
+
+}
+#quatre-archive{
+  font-size: $quatre-archive-size;
+  color:$quatre-archive-color;
+}
+/* Archive PAge */
+
+#archive{
+  border-top: 1px solid $line-color;
+  padding-top:$archive-padding-top;
+}
+#archive a {
+  font-size: $archive-size;
+  list-style: none;
+  margin-bottom: $archive-space;
+  font-family: $archive-title-font;
+    @media(max-width: $responsive-min){
+      text-align:center;
+    }
+}
+
+#archive a div.category{
+  border-radius: 3px;
+  background-color: $archive-categ-default-color;
+  font-family: $archive-categ-font;
+  color:$archive-categ-text-color;
+  padding: 4px;
+   text-transform: uppercase;
+   text-align:center;
+
+}
+
+#archive a div.category.tricks{
+  background-color: $post-categ-tricks;
+}
+
+#archive a div.category.server{
+  background-color: $post-categ-server;
+}
+#archive a div.category.media{
+  background-color: $post-categ-media;
+}
+#archive a div.category.development{
+  background-color: $post-categ-development;
+}
+#archive a div.category.alfredworkflow{
+  background-color: $post-categ-workflow;
+}
+
+
+#archive a time{
+  font-family: $archive-date-font;
+  font-size: $archive-date-size;
+  float: right;
+  color:$archive-date-color;
+}
+
+
+
+/*####### FOOTER ######### */
+/*#toTop {
+  width: $footer-line-width;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+
+  }*/
+
+a#archive-button{
+    font-family: $archive-bt-font;
+    font-size: $archive-bt-ft-size ;
+    text-transform: uppercase;
+
+    border-radius: $archivebt-radius;
+/*  border-style: solid;
+  border-width: $archivebt-brd-witdh;
+  border-color: $archivebt-border-color;*/
+  background-color: $archivebt-bg-color;
+  color: $archivebt-txt-color;
+  padding-top:$archivebt-padding;
+  padding-bottom: $archivebt-padding;
+  text-align: center;
+
+
+  transition : all $archivebt-animation-time;
+  /*browser specific versions*/
+  -moz-transition : all $archivebt-animation-time;
+  -ms-transition : all $archivebt-animation-time;
+  -webkit-transition : all $archivebt-animation-time;
+  -o-transition : all $archivebt-animation-time;
+}
+
+
+
+
+
+a:hover#archive-button{
+  background-color: $archivebt-bg-color-hover;
+  color: $archivebt-txt-color-hover;
+  border-color: $archivebt-border-color-hover;
+}
+
+footer{
+  font-family: $footer-font;
+  margin-bottom: $footer-margin-bottom;
+  margin-top: $footer-margin-top;
+}
+footer ul#footer_links{
+  width: $footer-line-width;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  border-top: $footer-line-height solid $line-color;
+  padding-top: $footer-line-space;
+  font-weight: bold;
+  font-size: $footer-links-size;
+}
+
+footer ul#footer_links li a{
+  color:$footer-links-color;
+}
+footer ul#footer_links li a:hover{
+  color:$footer-links-color-hover;
+}
+
+footer #copyright {
+  font-size: $footer-copyright-size;
+  color: $footer-copyright-color;
+  text-align: center;
+}
+
