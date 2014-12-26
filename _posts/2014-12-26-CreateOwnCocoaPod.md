@@ -20,7 +20,7 @@ This will create :
  - `LICENSE` file (do not remove)
  - `README.md` 
 
-All information about your Pod need to be filled in the `[PodName].podspec`. This a simple documented exzmple of `podspec` file.
+All information about your Pod need to be filled in the `[PodName].podspec`. This a simple documented example of `podspec` file.
 
 {% highlight sh %}
 
