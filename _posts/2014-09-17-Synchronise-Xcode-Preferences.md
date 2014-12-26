@@ -46,6 +46,7 @@ pathToRealFolder=~/Library/Developer/Xcode/UserData #Folder where are datas
 fileUser=( "KeyBindings" "CodeSnippets" "FontAndColorThemes" ) #folder to synchronize
 
 # create Sync Folder if necessary
+
 if [ ! -f $syncFolder ]
 then
 	echo creating sync folder
