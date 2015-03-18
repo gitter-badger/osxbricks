@@ -9,7 +9,7 @@ categories: Development
 
 ## Create a CocoaPod
 
-- Go to development folder
+- Go to development folder TEST
 - Create a Pod folder with this command : `pod lib create [PodName]`
 
 This will create : 
