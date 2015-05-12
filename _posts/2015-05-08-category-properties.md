@@ -10,7 +10,7 @@ keywords:
   - xcode
 ---
 
-This afternoon I discovered that the `NSView`property doesn't exist in `UIKit/UIView` so I decided to make a  **Category** of `UIView` to bearing this missing. But I discovered that is not easy to add a new _property_. So that's how to do it.
+This afternoon I discovered that the `NSView`property doesn't exist in `UIKit/UIView` so I decided to make a  **Category** of `UIView` to bear this missing. But I discovered that is not easy to add a new _property_. So that's how I did it.
 
 The the first step is to create your property in your header category :
 
